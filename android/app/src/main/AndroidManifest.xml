@@ -1,0 +1,134 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Required on Android 14+ for the Sentinel remoteMessaging foreground service type.
+         FOREGROUND_SERVICE and RECEIVE_BOOT_COMPLETED are already declared by
+         flutter_foreground_task's own manifest and merged automatically. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING" />
+    <!-- Allows the app to request Doze-mode exemption so Sentinel survives deep sleep.
+         The user must grant this via the system dialog shown when enabling Sentinel. -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- Price alert notifications (required on Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Biometric auth for viewing stored zpub (local_auth) -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <application
+        android:label="Bag"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <!-- Pro unlock deep link via Android App Links (HTTPS + assetlinks.json).
+                 autoVerify=true means Android verifies domain ownership at install time,
+                 preventing any other app from intercepting the token. -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"
+                      android:host="bitbag.app"
+                      android:pathPrefix="/unlock" />
+            </intent-filter>
+        </activity>
+        <!-- Widget timeframe configure activity — dialog overlay, not full-screen -->
+        <activity
+            android:name=".BagWidgetConfigureActivity"
+            android:exported="true"
+            android:theme="@style/WidgetConfigureTheme"
+            android:excludeFromRecents="true"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home screen widget -->
+        <receiver
+            android:name=".BagWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/bag_widget_info" />
+        </receiver>
+
+        <!-- Required for home_widget background callbacks (interactive widget actions) -->
+        <receiver android:name="es.antonborri.home_widget.HomeWidgetBackgroundReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="es.antonborri.home_widget.action.BACKGROUND" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Force Skia renderer so renderFlutterWidget bitmap orientation is
+             consistent across emulator (Skia/GL) and physical devices (Impeller
+             uses Vulkan and does NOT flip Y, breaking the Matrix flip in the
+             widget provider). Skia always flips via OpenGL Y-inversion. -->
+        <meta-data
+            android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="false" />
+
+        <!-- Sentinel: override the flutter_foreground_task service declaration to add
+             foregroundServiceType="remoteMessaging" (required on Android 14+). Using
+             remoteMessaging avoids the 6-hour time limit that Android enforces on dataSync
+             services. The service, RebootReceiver, and RestartReceiver are already declared
+             in the package's own manifest and merged automatically — do NOT redeclare them. -->
+        <service
+            android:name="com.pravera.flutter_foreground_task.service.ForegroundService"
+            android:foregroundServiceType="remoteMessaging"
+            android:stopWithTask="false"
+            android:exported="false" />
+
+        <!-- Sentinel notification icon: flutter_foreground_task 8.17+ resolves the
+             small icon via metaData.getInt(metaDataName). NotificationIcon(metaDataName:
+             "ic_notification") in Dart maps to this entry → @drawable/ic_notification. -->
+        <meta-data
+            android:name="ic_notification"
+            android:resource="@drawable/ic_notification" />
+
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+</manifest>
