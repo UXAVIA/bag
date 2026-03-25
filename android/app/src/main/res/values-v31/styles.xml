@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+ system splash screen: black background to match Flutter splash -->
+    <style name="LaunchTheme" parent="Theme.SplashScreen">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+        <item name="windowSplashScreenBackground">#000000</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon_transparent</item>
+        <!-- Black circle background hides the icon area — combined with the transparent
+             icon above this produces a pure black system splash that transitions
+             seamlessly into the Flutter SplashScreen animation. -->
+        <item name="windowSplashScreenIconBackgroundColor">#000000</item>
+        <item name="postSplashScreenTheme">@style/NormalTheme</item>
+    </style>
+</resources>
