@@ -1,0 +1,79 @@
+name: bag
+description: "Bag — Bitcoin Portfolio Monitor"
+publish_to: 'none'
+
+version: 1.2.3+22
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # HTTP
+  dio: ^5.8.0+1
+
+  # Local storage
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.3.5
+
+  # Charts
+  fl_chart: ^0.70.2
+
+  # Home screen widget + background refresh
+  home_widget: ^0.9.0
+  workmanager: ^0.7.0
+
+  # Sentinel: reliable foreground service for always-on wallet monitoring
+  flutter_foreground_task: ^8.13.0
+
+  intl: ^0.20.2
+  uuid: ^4.5.3
+  url_launcher: ^6.3.2
+  flutter_local_notifications: ^19.5.0
+  pointycastle: ^4.0.0
+  flutter_secure_storage: ^10.0.0
+  local_auth: ^2.3.0
+  socks5_proxy: ^1.0.4
+  flutter_svg: ^2.0.17
+  ed25519_edwards: ^0.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.14
+  riverpod_generator: ^2.6.5
+  custom_lint: ^0.7.5
+  riverpod_lint: ^2.6.5
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/icon.png"
+  image_path_ios: "assets/icons/icon_ios.png"
+  min_sdk_android: 23
+  adaptive_icon_background: "#13131A"
+  adaptive_icon_foreground: "assets/icons/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/seed/
+
+  fonts:
+    - family: SatoshiSymbol
+      fonts:
+        - asset: assets/fonts/satoshi_symbol.ttf
