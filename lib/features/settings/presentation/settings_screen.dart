@@ -88,12 +88,12 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       return;
     }
     await ref.read(portfolioProvider.notifier).setBtcAmount(parsed);
+    if (!mounted) return;
     setState(() => _dirty = false);
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Amount saved')),
-      );
-    }
+    FocusScope.of(context).unfocus();
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Amount saved')),
+    );
   }
 
   @override
@@ -111,6 +111,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         automaticallyImplyLeading: false,
       ),
       body: CustomScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         slivers: [
           // ── WALLET & PRIVACY (Pro) at top ──────────────────────────────
           SliverPadding(
