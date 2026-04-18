@@ -6,7 +6,7 @@ class AppConstants {
       String.fromEnvironment('FLAVOR', defaultValue: 'direct');
 
   // App version — keep in sync with pubspec.yaml
-  static const String appVersion = '1.2.7';
+  static const String appVersion = '1.2.8';
 
   // Store product ID for the Pro one-time purchase (store flavor only).
   static const String iapProProductId = 'bag_pro';

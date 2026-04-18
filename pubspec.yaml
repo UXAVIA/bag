@@ -2,7 +2,7 @@ name: bag
 description: "Bag — Bitcoin Portfolio Monitor"
 publish_to: 'none'
 
-version: 1.2.7+27
+version: 1.2.8+28
 
 environment:
   sdk: ^3.8.0
