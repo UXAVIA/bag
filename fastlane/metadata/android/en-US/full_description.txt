@@ -1,0 +1,28 @@
+Track your Bitcoin net worth in real time. Enter your BTC holdings, pick up to 3 fiat currencies, and watch your portfolio value update alongside live price charts and a DCA tracker.
+
+Bitcoin-only. No altcoins. No ads. No accounts. No analytics. Your holdings never leave your device.
+
+FEATURES
+
+* Net worth in up to 3 fiat currencies (USD, EUR, GBP and 50+ more)
+* Live BTC price charts - 1D / 1W / 1M / 1Y / ALL-time
+* DCA tracker with cost basis and P&L
+* Home screen widget with live price and net worth
+* Mempool fee estimates (sat/vB)
+* Sats / BTC display toggle
+* Dark and light theme
+
+PRO - one-time purchase, no subscription
+
+* Watch-only zpub wallet tracking (BIP84 / P2WPKH)
+* Tor routing via Orbot for full network privacy
+* Custom Esplora server support
+* Bitcoin Health Check - privacy score across all wallets
+* Sentinel: always-on balance monitoring with mempool alerts
+* Mempool fee alerts (above/below threshold)
+
+PRIVACY & SECURITY
+
+Only address hashes ever reach the explorer - your zpub and balance stay on-device. All network paths can be routed through Tor (Orbot required). No phone-home, no telemetry, no third-party SDKs.
+
+Open source: github.com/UXAVIA/bag
