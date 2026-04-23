@@ -107,6 +107,6 @@ Bug reports and pull requests are welcome. A few things worth knowing before div
 
 ## License
 
-GNU General Public License v3.0. See [LICENSE](LICENSE) for the full text.
+[![GPL-3.0-only](https://img.shields.io/badge/License-GPL--3.0--only-blue.svg)](https://spdx.org/licenses/GPL-3.0-only.html)
 
 This repository contains the open-source app code — the build distributed via direct download and F-Droid. The Pro unlock backend and Google Play release pipeline are proprietary and not included here.
