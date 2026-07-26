@@ -1,0 +1,67 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Release signing key — never commit
+*.jks
+*.keystore
+
+# StoreKit testing config (local only — App Store Connect controls prod)
+*.storekit
+
+# iOS export options (machine-specific provisioning profile names)
+ios/ExportOptions.plist
+
+# Claude Code
+.claude/
+
+# Local screenshots (generated via flutter screenshot — not for VCS)
+/screenshots/
+
+# Golden test outputs (generated — not for VCS)
+test/screenshots/goldens/
+
+# Golden test failure diffs
+test/screenshots/failures/
