@@ -1,0 +1,1 @@
+Fixed charts sometimes showing outdated prices after refreshing.
