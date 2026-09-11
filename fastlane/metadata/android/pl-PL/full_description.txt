@@ -1,0 +1,30 @@
+Miej na oku saldo swojego cold storage bez seed phrase w telefonie. Wklej zpub, output descriptor albo dwie linie eksportu portfela Bitkey, a Bag będzie śledzić saldo przez Tor - Twoje klucze nigdy nie opuszczają urządzenia. Dodaj ręcznie wpisane salda dla monet trzymanych gdzie indziej, zobacz swój majątek w maksymalnie 3 walutach, zapisuj zakupy DCA i trzymaj widżet na żywo na ekranie głównym.
+
+Tylko Bitcoin. Bez altcoinów. Bez reklam. Bez kont. Bez analityki. Twoje środki nigdy nie opuszczają urządzenia.
+
+BEZPŁATNIE
+
+* Majątek w maksymalnie 3 walutach fiat (USD, EUR, GBP i 25 innych)
+* Wykresy kursu BTC na żywo - 1D / 1T / 1M / 1R / Cały okres
+* Tracker DCA ze średnią ceną zakupu, kosztem nabycia i zyskiem/stratą
+* Widżet na ekranie głównym z kursem na żywo, wykresem i majątkiem
+* Szacowane opłaty z mempoola (sat/vB)
+* Przełączanie wyświetlania sats / BTC
+* Ciemny i jasny motyw
+
+PRO - zakup jednorazowy, bez subskrypcji
+
+* Portfele watch-only: zpub (BIP84) single-sig, output descriptory i multisig - Bitkey 2 z 3, eksporty ze Sparrow i Nunchuk
+* Ręczne salda dla środków na giełdach lub w hardware walletach, wliczane do majątku
+* Portfolio z wieloma portfelami
+* Routing przez Tor za pomocą Orbota dla pełnej prywatności w sieci
+* Własny serwer Esplora - podłącz Bag do własnego node'a
+* Bitcoin Health Check - ocena prywatności wszystkich portfeli: ponowne użycie adresów, higiena UTXO, pokrycie coinjoinem
+* Sentinel: stałe monitorowanie salda z natychmiastowymi alertami o transakcjach przychodzących i wychodzących
+* Alerty opłat z mempoola (powyżej/poniżej progu)
+
+PRYWATNOŚĆ I BEZPIECZEŃSTWO
+
+Do eksploratora bloków trafiają wyłącznie wyprowadzone adresy - Twój xpub, descriptor i saldo zostają na urządzeniu, zaszyfrowane. Każda ścieżka sieciowa może być kierowana przez Tor (wymagany Orbot) i jest blokowana, gdy Tor nie działa. Bez łączenia się z naszymi serwerami, bez telemetrii, bez SDK firm trzecich. Opcjonalna blokada biometryczna.
+
+Open source (GPL-3.0): github.com/UXAVIA/bag

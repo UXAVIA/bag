@@ -1,0 +1,30 @@
+Acompanhe o saldo da sua cold storage sem ter a seed phrase no celular. Cole um zpub, um output descriptor ou as duas linhas da exportação da carteira Bitkey, e o Bag acompanha o saldo via Tor - suas chaves nunca saem do aparelho. Adicione saldos informados manualmente para moedas guardadas em outro lugar, veja seu patrimônio em até 3 moedas fiat, registre suas compras DCA e mantenha um widget ao vivo na tela inicial.
+
+Somente Bitcoin. Sem altcoins. Sem anúncios. Sem contas. Sem analytics. Seus fundos nunca saem do seu aparelho.
+
+GRÁTIS
+
+* Patrimônio em até 3 moedas fiat (USD, EUR, GBP e mais 25)
+* Gráficos de preço do BTC ao vivo - 1D / 1S / 1M / 1A / Histórico completo
+* Rastreador DCA com preço médio de compra, custo de aquisição e lucro/prejuízo
+* Widget de tela inicial com preço ao vivo, gráfico e patrimônio
+* Estimativas de taxa da mempool (sat/vB)
+* Alternar exibição em sats / BTC
+* Tema escuro e claro
+
+PRO - compra única, sem assinatura
+
+* Carteiras somente leitura: zpub (BIP84) single-sig, output descriptors e multisig - Bitkey 2 de 3, exportações do Sparrow e do Nunchuk
+* Saldos manuais para fundos em exchanges ou hardware wallets, somados ao patrimônio
+* Portfólio com várias carteiras
+* Roteamento via Tor pelo Orbot para privacidade total na rede
+* Servidor Esplora personalizado - aponte o Bag para o seu próprio node
+* Bitcoin Health Check - pontuação de privacidade de todas as carteiras: reutilização de endereços, higiene de UTXOs, cobertura de coinjoin
+* Sentinel: monitoramento contínuo do saldo com alertas instantâneos de transações recebidas e enviadas
+* Alertas de taxa da mempool (acima/abaixo de um limite)
+
+PRIVACIDADE E SEGURANÇA
+
+Só endereços derivados chegam ao explorador de blocos - seu xpub, descriptor e saldo ficam no aparelho, criptografados em repouso. Todo caminho de rede pode ser roteado via Tor (requer Orbot) e é bloqueado se o Tor estiver fora. Sem phone-home, sem telemetria, sem SDKs de terceiros. Bloqueio biométrico opcional.
+
+Código aberto (GPL-3.0): github.com/UXAVIA/bag

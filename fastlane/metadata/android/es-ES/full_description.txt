@@ -1,0 +1,30 @@
+Vigila el saldo de tu cold storage sin tener la frase semilla en el móvil. Pega un zpub, un descriptor de salida o las dos líneas de la exportación de cartera de Bitkey, y Bag sigue el saldo a través de Tor - tus claves nunca salen del dispositivo. Añade saldos introducidos a mano para monedas que guardas en otro sitio, consulta tu patrimonio en hasta 3 divisas, registra tus compras DCA y mantén un widget en directo en tu pantalla de inicio.
+
+Solo Bitcoin. Sin altcoins. Sin anuncios. Sin cuentas. Sin analíticas. Tus fondos nunca salen de tu dispositivo.
+
+GRATIS
+
+* Patrimonio en hasta 3 divisas fiat (USD, EUR, GBP y 25 más)
+* Gráficos del precio de BTC en directo - 1D / 1S / 1M / 1A / Histórico completo
+* Rastreador DCA con precio medio de compra, coste de adquisición y P&L
+* Widget de pantalla de inicio con precio en directo, gráfico y patrimonio
+* Estimación de comisiones de la mempool (sat/vB)
+* Alternar visualización en sats / BTC
+* Tema oscuro y claro
+
+PRO - pago único, sin suscripción
+
+* Carteras de solo lectura: zpub (BIP84) single-sig, descriptores de salida y multisig - Bitkey 2 de 3, exportaciones de Sparrow y Nunchuk
+* Saldos manuales para fondos en exchanges o hardware wallets, sumados al patrimonio
+* Portfolio multicartera
+* Enrutamiento por Tor vía Orbot para privacidad total en la red
+* Servidor Esplora personalizado - conecta Bag a tu propio nodo
+* Bitcoin Health Check - puntuación de privacidad de todas tus carteras: reutilización de direcciones, higiene de UTXO, cobertura de coinjoin
+* Sentinel: monitorización permanente del saldo con alertas instantáneas de transacciones entrantes y salientes
+* Alertas de comisiones de la mempool (por encima/por debajo de un umbral)
+
+PRIVACIDAD Y SEGURIDAD
+
+Solo las direcciones derivadas llegan al explorador de bloques - tu xpub, tu descriptor y tu saldo permanecen en el dispositivo, cifrados en reposo. Toda ruta de red puede enrutarse por Tor (requiere Orbot) y se bloquea si Tor no está disponible. Sin conexiones a nuestros servidores, sin telemetría, sin SDK de terceros. Bloqueo biométrico opcional.
+
+Código abierto (GPL-3.0): github.com/UXAVIA/bag

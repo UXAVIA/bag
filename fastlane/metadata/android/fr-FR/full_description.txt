@@ -1,0 +1,30 @@
+Surveillez le solde de votre cold storage sans phrase de récupération sur votre téléphone. Collez un zpub, un descripteur de sortie ou les deux lignes de l'export de portefeuille Bitkey, et Bag suit le solde via Tor - vos clés ne quittent jamais l'appareil. Ajoutez des soldes saisis manuellement pour les coins détenus ailleurs, consultez votre patrimoine dans jusqu'à 3 devises, enregistrez vos achats DCA et gardez un widget en direct sur votre écran d'accueil.
+
+Bitcoin uniquement. Pas d'altcoins. Pas de pub. Pas de compte. Pas d'analytics. Vos avoirs ne quittent jamais votre appareil.
+
+GRATUIT
+
+* Patrimoine dans jusqu'à 3 devises fiat (USD, EUR, GBP et 25 autres)
+* Graphiques du cours du BTC en direct - 1J / 1S / 1M / 1A / Historique complet
+* Suivi DCA avec prix d'achat moyen, coût de revient et P&L
+* Widget d'écran d'accueil avec cours en direct, graphique et patrimoine
+* Estimation des frais mempool (sat/vB)
+* Affichage en sats ou en BTC
+* Thème sombre et clair
+
+PRO - achat unique, sans abonnement
+
+* Portefeuilles en lecture seule : zpub (BIP84) single-sig, descripteurs de sortie et multisig - Bitkey 2-sur-3, exports Sparrow et Nunchuk
+* Soldes manuels pour vos avoirs sur exchange ou hardware wallet, intégrés au patrimoine
+* Portfolio multi-portefeuilles
+* Routage Tor via Orbot pour une confidentialité réseau totale
+* Serveur Esplora personnalisé - connectez Bag à votre propre nœud
+* Bitcoin Health Check - score de confidentialité sur tous vos portefeuilles : réutilisation d'adresses, hygiène des UTXO, couverture coinjoin
+* Sentinel : surveillance permanente du solde avec alertes instantanées pour les transactions entrantes et sortantes
+* Alertes de frais mempool (au-dessus/en dessous d'un seuil)
+
+CONFIDENTIALITÉ & SÉCURITÉ
+
+Seules des adresses dérivées atteignent l'explorateur de blocs - votre xpub, votre descripteur et votre solde restent sur l'appareil, chiffrés au repos. Chaque chemin réseau peut être routé via Tor (Orbot requis) et se bloque si Tor est indisponible. Aucune connexion vers nos serveurs, pas de télémétrie, pas de SDK tiers. Verrouillage biométrique en option.
+
+Open source (GPL-3.0) : github.com/UXAVIA/bag

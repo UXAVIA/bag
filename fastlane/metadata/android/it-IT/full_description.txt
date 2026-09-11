@@ -1,0 +1,30 @@
+Tieni d'occhio il saldo del tuo cold storage senza avere la seed phrase sul telefono. Incolla uno zpub, un output descriptor o le due righe dell'esportazione del wallet Bitkey, e Bag segue il saldo tramite Tor - le tue chiavi non lasciano mai il dispositivo. Aggiungi saldi inseriti a mano per le monete custodite altrove, guarda il tuo patrimonio in fino a 3 valute, registra i tuoi acquisti DCA e tieni un widget in tempo reale nella schermata Home.
+
+Solo Bitcoin. Niente altcoin. Niente pubblicità. Niente account. Niente analytics. I tuoi fondi non lasciano mai il dispositivo.
+
+GRATIS
+
+* Patrimonio in fino a 3 valute fiat (USD, EUR, GBP e altre 25)
+* Grafici del prezzo BTC in tempo reale - 1G / 1S / 1M / 1A / Storico completo
+* Tracker DCA con prezzo medio di acquisto, costo di carico e P&L
+* Widget per la schermata Home con prezzo live, grafico e patrimonio
+* Stime delle commissioni mempool (sat/vB)
+* Visualizzazione in sats o BTC
+* Tema scuro e chiaro
+
+PRO - acquisto una tantum, nessun abbonamento
+
+* Wallet watch-only: zpub (BIP84) single-sig, output descriptor e multisig - Bitkey 2 di 3, esportazioni Sparrow e Nunchuk
+* Saldi manuali per fondi su exchange o hardware wallet, sommati al patrimonio
+* Portafoglio multi-wallet
+* Routing Tor tramite Orbot per la massima privacy di rete
+* Server Esplora personalizzato - collega Bag al tuo nodo
+* Bitcoin Health Check - punteggio privacy su tutti i wallet: riutilizzo degli indirizzi, igiene degli UTXO, copertura coinjoin
+* Sentinel: monitoraggio continuo del saldo con avvisi istantanei per transazioni in entrata e in uscita
+* Avvisi sulle commissioni mempool (sopra/sotto una soglia)
+
+PRIVACY E SICUREZZA
+
+Solo gli indirizzi derivati raggiungono il block explorer - xpub, descriptor e saldo restano sul dispositivo, cifrati a riposo. Ogni percorso di rete può essere instradato tramite Tor (richiede Orbot) e si blocca se Tor non è attivo. Nessun phone-home, nessuna telemetria, nessun SDK di terze parti. Blocco biometrico opzionale.
+
+Open source (GPL-3.0): github.com/UXAVIA/bag
