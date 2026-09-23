@@ -1,0 +1,1 @@
+When Tor is switched on but Orbot isn't running, the home screen now tells you that's why prices have stopped updating, and offers a re-check button once you've started Orbot. Previously prices would quietly freeze with no explanation.

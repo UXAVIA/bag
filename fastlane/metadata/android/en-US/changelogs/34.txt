@@ -1,0 +1,3 @@
+• Fixed: a selected currency could vanish from the home screen when a price source didn't quote it (e.g. CHF next to USD). Every currency now always shows, marked "cached" while its last price is being carried over.
+• New: Gold (XAU) as a display currency — see your stack in troy ounces, with charts and DCA history.
+• More resilient prices: an extra keyless source covers every currency when the others are down.

@@ -1,0 +1,7 @@
+Multisig wallets: add a watch-only wallet from an output descriptor, including Bitkey's 2-of-3. Single-sig zpubs work exactly as before.
+
+Coins held elsewhere: add a plain amount for an exchange balance and it counts towards your net worth alongside your wallets.
+
+Tap the balance on the home screen to jump to your holdings. The whole widget now opens the app.
+
+Privacy: balances, your purchase log and your node address are now encrypted on device, and Tor is enforced on price requests on iOS.

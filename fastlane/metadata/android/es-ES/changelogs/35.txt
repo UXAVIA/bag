@@ -1,0 +1,2 @@
+• Nuevo: edita una compra — toca cualquier entrada del rastreador DCA para corregir la cantidad, el precio, la fecha, la moneda o la nota.
+• Nuevo: rendimiento por compra — cada entrada muestra ahora su valor actual, la ganancia o pérdida y el cambio porcentual, junto al resumen de la cartera.

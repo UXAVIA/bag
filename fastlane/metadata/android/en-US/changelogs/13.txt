@@ -1,0 +1,1 @@
+v1.0.8 — Launcher icon fix: restored missing white bar in the app icon.

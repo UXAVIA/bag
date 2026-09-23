@@ -1,0 +1,30 @@
+Watch your cold-storage balance without a seed phrase on your phone. Paste a zpub, an output descriptor, or the two lines of Bitkey's wallet export, and Bag tracks the balance over Tor - your keys never leave the device. Add manually entered balances for coins held elsewhere, see your net worth in up to 3 currencies, log your DCA buys and keep a live widget on your home screen.
+
+Bitcoin-only. No altcoins. No ads. No accounts. No analytics. Your holdings never leave your device.
+
+FREE
+
+* Net worth in up to 3 fiat currencies (USD, EUR, GBP and 25 more)
+* Live BTC price charts - 1D / 1W / 1M / 1Y / ALL-time
+* DCA tracker with average buy price, cost basis and P&L
+* Home screen widget with live price, chart and net worth
+* Mempool fee estimates (sat/vB)
+* Sats / BTC display toggle
+* Dark and light theme
+
+PRO - one-time purchase, no subscription
+
+* Watch-only wallets: zpub (BIP84) single-sig, output descriptors and multisig - Bitkey 2-of-3, Sparrow and Nunchuk exports
+* Manual balances for exchange or hardware holdings, summed into net worth
+* Multi-wallet portfolio
+* Tor routing via Orbot for full network privacy
+* Custom Esplora server - point Bag at your own node
+* Bitcoin Health Check - privacy score across all wallets: address reuse, UTXO hygiene, coinjoin coverage
+* Sentinel: always-on balance monitoring with instant alerts for incoming and outgoing transactions
+* Mempool fee alerts (above/below threshold)
+
+PRIVACY & SECURITY
+
+Only derived addresses ever reach the block explorer - your xpub, descriptor and balance stay on-device, encrypted at rest. Every network path can be routed through Tor (Orbot required) and fails closed if Tor is down. No phone-home, no telemetry, no third-party SDKs. Optional biometric lock.
+
+Open source (GPL-3.0): github.com/UXAVIA/bag

@@ -1,0 +1,3 @@
+• Risolto: una valuta selezionata poteva sparire dalla schermata iniziale quando una fonte di prezzo non la quotava (es. CHF accanto a USD). Ora ogni valuta è sempre visibile, contrassegnata come "cached" finché viene mantenuto l'ultimo prezzo.
+• Novità: oro (XAU) come valuta di visualizzazione: il tuo stack in once troy, con grafici e storico DCA.
+• Prezzi più affidabili: una fonte aggiuntiva senza chiave copre tutte le valute quando le altre non rispondono.

@@ -1,0 +1,60 @@
+# iOS store submission for Bag.
+#
+# The signed IPA is produced by .github/workflows/release.yml (flutter build ipa
+# + xcodebuild -exportArchive); this only handles upload and submission.
+#
+# Android is published by r0adkll/upload-google-play in the same workflow, not
+# by fastlane, so there is no :android platform here.
+
+default_platform(:ios)
+
+# App Store Connect metadata lives under fastlane/metadata/ios/ rather than
+# deliver's default fastlane/metadata/, because this repo also keeps Play/F-Droid
+# metadata under fastlane/metadata/android/.
+IOS_METADATA_PATH = "fastlane/metadata/ios".freeze
+
+platform :ios do
+  desc "Upload the signed IPA to TestFlight, then submit it for App Store review"
+  lane :release do |options|
+    ipa = options[:ipa] || "build/ios/ipa/bag.ipa"
+    version = options[:version] or UI.user_error!("Missing :version")
+    build = options[:build] or UI.user_error!("Missing :build")
+
+    api_key = app_store_connect_api_key(
+      key_id: ENV.fetch("APP_STORE_CONNECT_API_KEY_ID"),
+      issuer_id: ENV.fetch("APP_STORE_CONNECT_API_KEY_ISSUER_ID"),
+      key_content: ENV.fetch("APP_STORE_CONNECT_API_KEY_P8"),
+      is_key_content_base64: true,
+    )
+
+    # Uploads and blocks until Apple finishes processing the build. The wait is
+    # required: a build still in processing cannot be attached to an App Store
+    # version, so submitting straight after upload fails. Also makes the build
+    # available to TestFlight testers.
+    upload_to_testflight(
+      api_key: api_key,
+      ipa: ipa,
+      skip_submission: true,                      # no external beta review
+      skip_waiting_for_build_processing: false,   # explicit: we need the wait
+    )
+
+    # Attaches the processed build to the App Store version and submits it.
+    # Auto-releases once Apple approves — there is no manual gate, by design.
+    deliver(
+      api_key: api_key,
+      app_version: version,
+      build_number: build,
+      metadata_path: IOS_METADATA_PATH,
+      skip_binary_upload: true,     # already uploaded above
+      skip_screenshots: true,       # managed in App Store Connect
+      submit_for_review: true,
+      automatic_release: true,
+      force: true,                  # no interactive HTML preview
+      run_precheck_before_submit: false,
+      submission_information: {
+        export_compliance_uses_encryption: false, # ITSAppUsesNonExemptEncryption=false
+        add_id_info_uses_idfa: false,             # no ad identifier, no analytics
+      },
+    )
+  end
+end

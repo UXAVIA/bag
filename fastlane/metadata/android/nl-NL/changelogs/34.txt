@@ -1,0 +1,3 @@
+• Opgelost: een geselecteerde valuta kon van het startscherm verdwijnen als een prijsbron die niet leverde (bijv. CHF naast USD). Elke valuta wordt nu altijd getoond, gemarkeerd als "cached" zolang de laatste koers wordt overgenomen.
+• Nieuw: goud (XAU) als weergavevaluta – je stack in troy ounces, met grafieken en DCA-geschiedenis.
+• Robuustere prijzen: een extra bron zonder sleutel dekt alle valuta's als de andere uitvallen.

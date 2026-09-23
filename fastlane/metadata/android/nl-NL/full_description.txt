@@ -1,0 +1,30 @@
+Houd het saldo van je cold storage in de gaten zonder seed phrase op je telefoon. Plak een zpub, een output descriptor of de twee regels van de Bitkey-walletexport, en Bag volgt het saldo via Tor - je sleutels verlaten nooit het apparaat. Voeg handmatig ingevoerde saldi toe voor coins die je elders bewaart, bekijk je vermogen in maximaal 3 valuta's, log je DCA-aankopen en zet een live widget op je startscherm.
+
+Alleen Bitcoin. Geen altcoins. Geen reclame. Geen accounts. Geen analytics. Je bezit verlaat nooit je apparaat.
+
+GRATIS
+
+* Vermogen in maximaal 3 fiatvaluta's (USD, EUR, GBP en 25 andere)
+* Live BTC-koersgrafieken - 1D / 1W / 1M / 1J / Alles
+* DCA-tracker met gemiddelde aankoopprijs, kostprijs en winst/verlies
+* Startschermwidget met live koers, grafiek en vermogen
+* Mempool-feeschattingen (sat/vB)
+* Weergave in sats / BTC omschakelen
+* Donker en licht thema
+
+PRO - eenmalige aankoop, geen abonnement
+
+* Watch-only wallets: zpub (BIP84) single-sig, output descriptors en multisig - Bitkey 2-van-3, Sparrow- en Nunchuk-exports
+* Handmatige saldi voor bezit op exchanges of hardware wallets, opgeteld bij je vermogen
+* Portfolio met meerdere wallets
+* Tor-routering via Orbot voor volledige netwerkprivacy
+* Eigen Esplora-server - koppel Bag aan je eigen node
+* Bitcoin Health Check - privacyscore over al je wallets: adreshergebruik, UTXO-hygiëne, coinjoin-dekking
+* Sentinel: permanente saldobewaking met directe meldingen bij inkomende en uitgaande transacties
+* Mempool-feemeldingen (boven/onder een drempel)
+
+PRIVACY & BEVEILIGING
+
+Alleen afgeleide adressen bereiken ooit de block explorer - je xpub, descriptor en saldo blijven op het apparaat, versleuteld opgeslagen. Elk netwerkpad kan via Tor worden geleid (Orbot vereist) en blokkeert als Tor niet draait. Geen phone-home, geen telemetrie, geen SDK's van derden. Optionele biometrische vergrendeling.
+
+Open source (GPL-3.0): github.com/UXAVIA/bag

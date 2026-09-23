@@ -1,0 +1,3 @@
+v1.0.7 - Sentinel optimisations: improved battery usage during background monitoring.
+Always-on balance alerts and mempool monitoring now more efficient.
+Bug fixes and stability improvements.
