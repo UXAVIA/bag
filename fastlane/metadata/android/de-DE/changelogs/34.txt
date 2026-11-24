@@ -1,0 +1,3 @@
+• Behoben: Eine ausgewählte Währung konnte vom Startbildschirm verschwinden, wenn eine Preisquelle sie nicht lieferte (z. B. CHF neben USD). Jede Währung wird jetzt immer angezeigt, mit dem Hinweis „cached“, solange der letzte Kurs übernommen wird.
+• Neu: Gold (XAU) als Anzeigewährung – dein Bestand in Feinunzen, mit Charts und DCA-Verlauf.
+• Robustere Kurse: Eine zusätzliche Quelle ohne API-Schlüssel deckt alle Währungen ab, wenn die anderen ausfallen.

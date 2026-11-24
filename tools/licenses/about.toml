@@ -1,0 +1,62 @@
+# cargo-about configuration for the Rust crates in Bag's Tor library: the tor
+# plugin's crate (rust_lib_tor, the fork's rust/ directory) and everything it
+# pulls in. Read by tools/licenses/generate.py, which runs
+# `cargo about generate --format json --frozen --fail` with it.
+#
+# A top-level key that cargo-about doesn't know is read as a crate name, so
+# keep this file to the keys below.
+
+# Accepted licences, in order of preference: for `A OR B`, cargo-about picks
+# the first one listed here that the expression allows, and generate.py
+# records that choice. Permissive licences first, MPL-2.0 last (file-level
+# copyleft: generate.py gives every MPL-2.0 crate its crates.io source URL).
+# A crate whose licence allows none of these fails generation.
+# generate.py's ACCEPTED must list the same licences in the same order.
+accepted = [
+    "MIT",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "Zlib",
+    "Unicode-3.0",
+    "CC0-1.0",
+    "Unlicense",
+    "MPL-2.0",
+]
+
+# The Rust targets Bag ships: Flutter's three default Android ABIs and the iOS
+# device. Crates only another platform needs (r-efi, windows-*, wasi) are left
+# out.
+targets = [
+    "aarch64-linux-android",
+    "armv7-linux-androideabi",
+    "x86_64-linux-android",
+    "aarch64-apple-ios",
+]
+
+# Build dependencies and proc macros are kept: they are part of what compiles
+# the library. Dev dependencies (tests only) are not.
+ignore-build-dependencies = false
+ignore-dev-dependencies = true
+
+# The plugin's own crate has no `license` field; every file in the plugin
+# carries `SPDX-License-Identifier: MIT` and its LICENSE is MIT, copyright
+# Foundation Devices Inc. The checksum pins that LICENSE: if the fork changes
+# it, generation fails until this is reviewed again.
+[rust_lib_tor.clarify]
+license = "MIT"
+
+[[rust_lib_tor.clarify.files]]
+path = "../LICENSE"
+checksum = "235e824531527e8249ebe786aa022fb7d6b3d680cc92334722572a622a132a7d"
+
+# allo-isolate has no `license` field, only `license-file = "LICENSE"`, which
+# is the Apache License 2.0 (the full text, with the appendix's placeholder
+# copyright line left as is). Pinned the same way.
+[allo-isolate.clarify]
+license = "Apache-2.0"
+
+[[allo-isolate.clarify.files]]
+path = "LICENSE"
+checksum = "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"

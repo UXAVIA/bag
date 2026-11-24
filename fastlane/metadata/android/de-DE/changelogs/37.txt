@@ -1,0 +1,7 @@
+• Neu: Tor ist in Bag eingebaut, auf Android und iOS – ohne Orbot (Pro). Orbot für Bag genutzt? Du kannst es ausschalten.
+• Neu: Leite Bag über deinen eigenen SOCKS5- oder HTTP-Proxy (Pro).
+• Neu: Tab „Wallets“ für Watch-only-Wallets und Tor-, Proxy- und Node-Einstellungen.
+• Das Widget zeigt, ob die Kurse über Tor, einen Proxy oder direkt kamen, und wann.
+• Pro neu gestaltet: klarer, weiterhin ein Einmalkauf.
+• Neue Währung: Ukrainische Hrywnja (UAH).
+• Mehr Sicherheit und Privatsphäre.

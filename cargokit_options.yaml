@@ -1,0 +1,12 @@
+# Options for cargokit, which compiles the `tor` plugin's Rust (Arti) during
+# the Android and iOS builds. cargokit looks for this file in the build's root
+# project directory (android/ for Gradle, ios/Pods for the pod's build phase)
+# and then in each parent directory, so this one applies to both.
+#
+# Always compile from source, never download a prebuilt library, even on a
+# machine without rustup. The pinned fork configures no prebuilt binaries
+# anyway; this makes the rule independent of that.
+use_precompiled_binaries: false
+# Log every command cargokit runs (not its environment), so a CI or F-Droid
+# build log shows exactly how the Rust library was built.
+verbose_logging: true

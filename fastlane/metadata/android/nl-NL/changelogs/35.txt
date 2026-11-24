@@ -1,0 +1,2 @@
+• Nieuw: aankoop bewerken – tik op een item in de DCA-tracker om hoeveelheid, prijs, datum, valuta of notitie te corrigeren.
+• Nieuw: rendement per aankoop – elk item toont nu de huidige waarde, winst of verlies en het procentuele verschil, naast het portfolio-overzicht.

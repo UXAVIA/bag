@@ -1,0 +1,471 @@
+{
+  "about": "Facts generate.py can't read from package metadata. Each is pinned to a file and its SHA-256, or to an exact crate version, so a dependency bump that changes one fails generation until someone reviews it again. 'why' says how each was established.",
+  "texts": {
+    "Apache-2.0": {
+      "file": "texts/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "why": "The canonical Apache License 2.0, given once for every Apache-2.0 Android library (their packages carry no licence file of their own)."
+    },
+    "arti-MIT": {
+      "file": "texts/arti-LICENSE-MIT",
+      "sha256": "e40081d18f17b6783fcb554ae42f6fa3548988e4d705a3e4541e2ef240293040",
+      "url": "https://gitlab.torproject.org/tpo/core/arti/-/raw/7c038125baef924a4bf287429c192c5af606f79c/LICENSE-MIT",
+      "why": "Arti's LICENSE-MIT (Copyright 2019-2025, The Tor Project, Inc.) at the commit its crates were published from."
+    },
+    "asn1-rs-MIT": {
+      "file": "texts/asn1-rs-LICENSE-MIT",
+      "sha256": "a5c61b93b6ee1d104af9920cf020ff3c7efe818e31fe562c72261847a728f513",
+      "url": "https://raw.githubusercontent.com/rusticata/asn1-rs/a20e5f7319c896737ad0f2557037817b91ad854f/LICENSE-MIT",
+      "why": "asn1-rs's LICENSE-MIT at the commit asn1-rs-impl 0.2.0 was published from."
+    },
+    "cookie-factory-MIT": {
+      "file": "texts/cookie-factory-MIT.txt",
+      "sha256": "d09216dc1ea5f273997667935a8d6514d80f00b89fb6954ecc3a43e0a6e360de",
+      "url": "https://raw.githubusercontent.com/rust-bakery/cookie-factory/d36b805dbd7dd65f2df947235c5bcc573afe2c76/LICENSES/MIT.txt",
+      "why": "cookie-factory's REUSE licence file LICENSES/MIT.txt (its .reuse/dep5 names it for every file) at the commit 0.3.3 was published from."
+    },
+    "dart-sys-MIT": {
+      "file": "texts/dart-sys-LICENSE-MIT.md",
+      "sha256": "a6b742d988bc83c6182193ca4e5abf2dbb67e929817fc94f5ed6e9f49b803f29",
+      "url": "https://raw.githubusercontent.com/dart-sys/dart-sys/c9329430a5a8e3828cf59600babe7896326c7c44/LICENSE-MIT.md",
+      "why": "dart-sys's LICENSE-MIT.md at the commit dart-sys 4.1.5 was published from."
+    },
+    "derive-deftly-MIT": {
+      "file": "texts/derive-deftly-LICENCE",
+      "sha256": "8ca14a71ccb997fcb12b610a631f51fe181d17db17b47aaeb6e3dc6cfbddce32",
+      "url": "https://gitlab.torproject.org/Diziet/rust-derive-deftly/-/raw/f9e00febd126be8806e454cb7846fe18c55682f3/LICENCE",
+      "why": "derive-deftly's LICENCE at the commit derive-deftly-macros 1.14.0 was published from."
+    },
+    "desugar_jdk_libs": {
+      "file": "texts/desugar_jdk_libs-LICENSE",
+      "sha256": "4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726",
+      "url": "https://raw.githubusercontent.com/google/desugar_jdk_libs/50d9c1fb3e85fa4c00161525a45484f712c1f003/LICENSE",
+      "why": "GPL-2.0 with the Classpath Exception, as in OpenJDK: the LICENSE of google/desugar_jdk_libs at 50d9c1fb ('Prepare for jdk-11 based desugared library version 2.1.4', 2024-12-18), unchanged since af7193bb (2023-09-27). Its POM names the same licence."
+    },
+    "flutter_rust_bridge-MIT": {
+      "file": "texts/flutter_rust_bridge-LICENSE",
+      "sha256": "d56622df159a9967bd6a16c726823a2cbe8546c1f18437617283c9da27000390",
+      "url": "https://raw.githubusercontent.com/fzyzcjy/flutter_rust_bridge/f19087cd0cac019b82d52cfa5153ce81b1b6e902/LICENSE",
+      "why": "flutter_rust_bridge's LICENSE at the commit its 2.11.1 crates were published from."
+    },
+    "jitterentropy-LICENSE": {
+      "file": "texts/jitterentropy-LICENSE",
+      "sha256": "088d208b9d22530691f1e9406a85dd7f6f5a42e3cf23d3d6df6582408e3840f7",
+      "url": "https://raw.githubusercontent.com/smuellerDD/jitterentropy-library/c90ff465dcdb6a6949542c72a26a8ab496daa8cb/LICENSE",
+      "why": "The Jitter Entropy library's LICENSE at its v3.6.3 release commit (tag v3.6.3 -> c90ff465), the version AWS-LC vendors in aws-lc/third_party/jitterentropy (JENT_MAJVERSION 3, MINVERSION 6, PATCHLEVEL 3). aws-lc-sys's package doesn't include it; its sources say \"License: see LICENSE file in root directory\". BSD-3-Clause, with a GPL-2.0 alternative that AWS-LC declines; Copyright (C) 2017 - 2025, Stephan Mueller."
+    },
+    "jni-rs-MIT": {
+      "file": "texts/jni-rs-LICENSE-MIT",
+      "sha256": "fea1d5bf3dd71605ce5d7d2ff695c1837e914c77195e523a86b5391716477960",
+      "url": "https://raw.githubusercontent.com/jni-rs/jni-rs/5ae9458a4ec44c5318f37ddc7569c1d4ae8a69e7/LICENSE-MIT",
+      "why": "jni-rs's LICENSE-MIT; identical at 5ae9458a (jni 0.22.4) and 33045a12 (jni-macros 0.22.4)."
+    },
+    "jni-sys-MIT": {
+      "file": "texts/jni-sys-LICENSE-MIT",
+      "sha256": "1d85bd754b04ceec93e98e890edd1fa3c6a22e81bcb32135806beeccefa51cd1",
+      "url": "https://raw.githubusercontent.com/jni-rs/jni-sys/64d77b7a5f119d7b55b4e2c169a4668067ff59e6/LICENSE-MIT",
+      "why": "jni-sys's LICENSE-MIT at the commit jni-sys-macros 0.4.1 was published from."
+    },
+    "material-icons": {
+      "file": "texts/MaterialIcons_LICENSE.txt",
+      "sha256": "be698262aecd042c0de6f886cc0af622f8def446462026992cc530275d8a9e74",
+      "url": "https://storage.googleapis.com/flutter_infra_release/flutter/fonts/3012db47f3130e62f7cc0beabff968a33cbec8d8/fonts.zip",
+      "why": "MaterialIcons_LICENSE.txt from Flutter's material_fonts artifact (bin/internal/material_fonts.version), which Flutter installs as bin/cache/artifacts/material_fonts/: the Creative Commons Attribution 4.0 International licence. generate.py also compares it with the Flutter SDK's copy on every run."
+    },
+    "objc2-licence": {
+      "file": "texts/objc2-LICENSE.md",
+      "sha256": "7f976f7e9cb2d87df7230606feb932c3f21ac0e664045a775b600046ff850c54",
+      "url": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md",
+      "why": "objc2's LICENSE.md (how its crates are licensed, and its note on Apple SDKs) at the commit its 0.3.2 framework crates were published from."
+    },
+    "protobuf": {
+      "file": "texts/protobuf-LICENSE",
+      "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d",
+      "url": "https://raw.githubusercontent.com/protocolbuffers/protobuf/v32.1/LICENSE",
+      "why": "Protocol Buffers' BSD-3-Clause licence (Copyright 2008 Google Inc.) at v32.1, the release tink-java v1.19.0 builds with (protobuf-javalite 4.32.1 in its MODULE.bazel). The same text has covered protobuf-java for years."
+    },
+    "r8": {
+      "file": "texts/r8-LICENSE",
+      "sha256": "f3e130966ccd407a348daeef5266f7f7e915e937c0980a5b6719c7fdb9c4370c",
+      "url": "https://dl.google.com/android/maven2/com/android/tools/desugar_jdk_libs_configuration/2.1.4/desugar_jdk_libs_configuration-2.1.4.jar",
+      "why": "The LICENSE file inside desugar_jdk_libs_configuration 2.1.4's jar (BSD-3-Clause, Copyright (c) 2016, the R8 project authors), as its POM's BSD-3-Clause names."
+    },
+    "rust-MIT": {
+      "file": "texts/rust-LICENSE-MIT",
+      "sha256": "b71bd43a069ca0641a9ecfe585ca7b3c53b5cc1608f8b68321168698e28b5ea1",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/1.100.0/LICENSE-MIT",
+      "why": "rust-lang/rust's LICENSE-MIT at tag 1.100.0 (Copyright (c) The Rust Project Contributors)."
+    }
+  },
+  "upstream_licence_files": [
+    {
+      "repository": "https://gitlab.torproject.org/tpo/core/arti.git/",
+      "commit": "7c038125baef924a4bf287429c192c5af606f79c",
+      "license": "MIT",
+      "text": "arti-MIT",
+      "why": "Arti's crates are published without a licence file. Every one of them in the graph names this commit in its .cargo_vcs_info.json. When the fork moves to another Arti release, fetch LICENSE-MIT at the new commit, then update the commit, the file and its sha256."
+    },
+    {
+      "repository": "https://github.com/rusticata/asn1-rs.git",
+      "commit": "a20e5f7319c896737ad0f2557037817b91ad854f",
+      "license": "MIT",
+      "text": "asn1-rs-MIT",
+      "why": "asn1-rs-impl 0.2.0's package has no licence file."
+    },
+    {
+      "repository": "https://github.com/dart-sys/dart-sys",
+      "commit": "c9329430a5a8e3828cf59600babe7896326c7c44",
+      "license": "MIT",
+      "text": "dart-sys-MIT",
+      "why": "dart-sys 4.1.5's package has no licence file."
+    },
+    {
+      "repository": "https://github.com/fzyzcjy/flutter_rust_bridge",
+      "commit": "f19087cd0cac019b82d52cfa5153ce81b1b6e902",
+      "license": "MIT",
+      "text": "flutter_rust_bridge-MIT",
+      "why": "flutter_rust_bridge and flutter_rust_bridge_macros 2.11.1 have no licence file in their packages."
+    },
+    {
+      "repository": "https://github.com/jni-rs/jni-rs",
+      "commit": "5ae9458a4ec44c5318f37ddc7569c1d4ae8a69e7",
+      "license": "MIT",
+      "text": "jni-rs-MIT",
+      "why": "jni 0.22.4's package has no licence file."
+    },
+    {
+      "repository": "https://github.com/jni-rs/jni-rs",
+      "commit": "33045a124105c939d1e2cbdcb5a39e5d868ffa03",
+      "license": "MIT",
+      "text": "jni-rs-MIT",
+      "url": "https://raw.githubusercontent.com/jni-rs/jni-rs/33045a124105c939d1e2cbdcb5a39e5d868ffa03/LICENSE-MIT",
+      "why": "jni-macros 0.22.4's package has no licence file."
+    },
+    {
+      "repository": "https://github.com/jni-rs/jni-sys",
+      "commit": "64d77b7a5f119d7b55b4e2c169a4668067ff59e6",
+      "license": "MIT",
+      "text": "jni-sys-MIT",
+      "why": "jni-sys-macros 0.4.1's package has no licence file."
+    },
+    {
+      "repository": "https://github.com/madsmtm/objc2",
+      "commit": "7b1abfd750a2cacaea71d6a56ecfb83cb7de560b",
+      "license": "MIT",
+      "notice": "objc2-licence",
+      "why": "objc2-core-foundation and objc2-io-kit 0.3.2 ship no licence file, and objc2's repository has no MIT file with a copyright line: its LICENSE.md is shipped as a notice, with the standard MIT text."
+    },
+    {
+      "repository": "https://gitlab.torproject.org/Diziet/rust-derive-deftly",
+      "commit": "f9e00febd126be8806e454cb7846fe18c55682f3",
+      "license": "MIT",
+      "text": "derive-deftly-MIT",
+      "why": "derive-deftly-macros 1.14.0's package has no licence file."
+    },
+    {
+      "repository": "https://github.com/rust-bakery/cookie-factory",
+      "commit": "d36b805dbd7dd65f2df947235c5bcc573afe2c76",
+      "license": "MIT",
+      "text": "cookie-factory-MIT",
+      "why": "cookie-factory 0.3.3's package has no licence file."
+    }
+  ],
+  "no_licence_file": {
+    "amplify_num 0.5.4": "Checked: no licence file in the package; its repository's LICENSE (amplify-num at 872842c3) is the bare Apache License text with no copyright line, which is what the standard text gives.",
+    "amplify_syn 2.0.1": "Checked: no licence file in the package; its repository's LICENSE (amplify-derive at 29ca86c5) is the bare Apache License text with no copyright line.",
+    "void 1.0.2": "Checked: no licence file in the package, which records no publishing commit, and none in reem/rust-void at its 1.0.2 tag (ab2f4dbb); a LICENSE-MIT was added there later."
+  },
+  "licence_notice_files": {},
+  "licence_choices": {
+    "dunce 1.0.5": {
+      "license": "CC0-1.0",
+      "file": "LICENSE",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "why": "`CC0-1.0 OR MIT-0 OR Apache-2.0`; the package's only licence file is the CC0 1.0 Universal text. cargo-about prefers Apache-2.0 (earlier in `accepted`), which the package has no text for, so the option it does ship is used. A build dependency of aws-lc-sys (Windows path handling in its build script)."
+    }
+  },
+  "source_notices": {
+    "amplify_num 0.5.4": {
+      "file": "src/lib.rs",
+      "start": "// Written in 2020-2026",
+      "end": "// Copyright (C) 2020-2026 Dr Maxim Orlovsky.\n// All rights reserved.",
+      "sha256": "ec1fd6c4906d2f8335c783d960f35f3561ae3cae93480f1a1dca3cd0c6e9471e",
+      "why": "The package ships no licence file and its repository's LICENSE is the bare Apache text, but src/lib.rs's header carries its copyright lines."
+    },
+    "ident_case 1.0.1": {
+      "file": "src/lib.rs",
+      "start": "// Copyright 2017 Serde Developers",
+      "end": "// Copyright 2017 Serde Developers",
+      "sha256": "c0cb509fb94618fe174caac804c1bd98f9730a7de3f1e40644d5d6e28b4c8d3c",
+      "why": "Its licence files name no copyright holder; src/lib.rs's header does."
+    },
+    "sync_wrapper 1.0.2": {
+      "file": "src/lib.rs",
+      "start": " * Copyright 2020 Actyx AG",
+      "end": " * Copyright 2020 Actyx AG",
+      "sha256": "b5c93911a72a9f21096e087513dfff3294c3af7985f84d12af903564a03e695a",
+      "why": "Its LICENSE is the Apache text with the appendix unfilled; src/lib.rs's header carries the copyright line."
+    },
+    "amplify_syn 2.0.1": {
+      "file": "src/lib.rs",
+      "start": "// Written in 2019-2021 by",
+      "end": "//     Dr. Maxim Orlovsky <orlovsky@pandoracore.com>",
+      "sha256": "8257c9f64d53da51fdc15db94ea6ad3085f42dad3d3dd8266a976c13c3d8e97e",
+      "why": "For consistency with amplify_num: the authorship line of its src/lib.rs header. (The header then dedicates the code to the public domain and points to MIT, while Cargo.toml says Apache-2.0; the notices follow Cargo.toml.)"
+    }
+  },
+  "reviewed_files": {
+    "crossbeam-channel 0.5.17": {
+      "LICENSE-THIRD-PARTY": {
+        "sha256": "b16db96b93b1d7cf7bea533f572091ec6bca3234fbe0a83038be772ff391a44c",
+        "ship": false,
+        "summary": "its notices cover examples and tests, which aren't compiled",
+        "why": "Its parts are for files the library doesn't compile: matching.go (CC BY 3.0) for examples/matching.rs, the Go Programming Language (BSD-3-Clause) for tests/golang.rs, and the Rust Programming Language (MIT OR Apache-2.0) for tests/mpsc.rs; src/ names none of them."
+      }
+    },
+    "liblzma-sys 0.4.9": {
+      "xz/COPYING": {
+        "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8",
+        "ship": false,
+        "summary": "XZ Utils' licence summary; the compiled liblzma is 0BSD, shipped",
+        "why": "XZ Utils' summary of its licences. build.rs compiles only xz/src/liblzma and xz/src/common (tuklib), both 0BSD: xz/COPYING.0BSD ships as the bundled source's licence, with the notice line this file suggests."
+      },
+      "xz/COPYING.GPLv2": {
+        "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+        "ship": false,
+        "summary": "covers XZ Utils' scripts, not compiled",
+        "why": "For XZ Utils' scripts (xzgrep and others) and build system, which aren't compiled."
+      },
+      "xz/COPYING.GPLv3": {
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "ship": false,
+        "summary": "covers XZ Utils' build system, not compiled",
+        "why": "For parts of XZ Utils' build system, not compiled."
+      },
+      "xz/COPYING.LGPLv2.1": {
+        "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+        "ship": false,
+        "summary": "covers getopt for XZ Utils' tools, not compiled",
+        "why": "For the getopt_long the xz command-line tools may link; the tools aren't compiled."
+      },
+      "xz/build-aux/license-check.sh": {
+        "sha256": "2b3fa1d23cb2ab084f3d919908159473cc0e1eed059d106e2a2857c0ec8af98a",
+        "ship": false,
+        "summary": "a maintainer script",
+        "why": "A maintainer script that checks XZ Utils' file licences; not a licence, not compiled."
+      }
+    },
+    "libsqlite3-sys 0.38.2": {
+      "sqlcipher/LICENSE": {
+        "sha256": "ea4fcb309f14a22065e1ea45362d494d320012249ed865fe9c7c0946db754131",
+        "ship": false,
+        "absent_features": [
+          "sqlcipher",
+          "bundled-sqlcipher",
+          "bundled-sqlcipher-vendored-openssl"
+        ],
+        "summary": "SQLCipher's licence; SQLCipher is built only with features that are off",
+        "why": "SQLCipher's BSD-style licence (Zetetic LLC), for the bundled SQLCipher amalgamation, which build.rs compiles only with the `sqlcipher` or `bundled-sqlcipher` features. Generation checks with cargo tree that none is on; the plain SQLite amalgamation is what's built (its notice ships under bundled_sources)."
+      }
+    },
+    "minimal-lexical 0.2.1": {
+      "LICENSE.md": {
+        "sha256": "dbe1fff0fb1314b6af94f161511406275cf01c5a32441fbf24528a57a051d599",
+        "ship": false,
+        "absent_features": [
+          "compact"
+        ],
+        "summary": "its Go Authors notice covers code only the off `compact` feature compiles",
+        "why": "Beyond pointing to LICENSE-MIT/LICENSE-APACHE, it carries the Go Authors' BSD-3-Clause notice for src/bellerophon.rs, which only the `compact` feature compiles. Generation checks with cargo tree that `compact` is off on every target."
+      }
+    },
+    "parking 2.2.1": {
+      "LICENSE-THIRD-PARTY": {
+        "sha256": "9a6d7a3c1b8edcc706c4b6c37f8dae9a77f02c7f9051df603f975db136b55419",
+        "ship": true,
+        "why": "Copyright 2014-2020 The Rust Project Developers, Apache-2.0 OR MIT, for code derived from the Rust standard library. Shipped as parking's notice: the standard library entry's text is the same licence, but this is the copyright line for the code parking compiles."
+      }
+    },
+    "regex-syntax 0.8.12": {
+      "src/unicode_tables/LICENSE-UNICODE": {
+        "sha256": "74db5baf44a41b1000312c673544b3374e4198af5605c7f9080a402cec42cfa3",
+        "ship": true,
+        "why": "The Unicode licence for the data in src/unicode_tables/. Of the `unicode-*` features, cargo tree shows only `unicode-case` on (with `std`) for all four targets; it compiles case_folding_simple.rs, Unicode data under this licence, which asks that its notice appear with all copies. That is why it ships."
+      }
+    },
+    "tracing-core 0.1.36": {
+      "src/spin/LICENSE": {
+        "sha256": "58545fed1565e42d687aecec6897d35c6d37ccb71479a137c0deb2203e125c79",
+        "ship": true,
+        "why": "MIT, Copyright (c) 2014 Mathijs van de Nes, for the vendored copy of spin in src/spin/. It is not compiled: lib.rs declares the module only under #[cfg(not(feature = \"std\"))], and cargo tree shows `std` on for all four targets. Shipped by review even so (cargo-about also reads it as one of the crate's licence files)."
+      }
+    },
+    "zstd-sys 2.1.3+zstd.1.5.7": {
+      "zstd/COPYING": {
+        "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+        "ship": false,
+        "summary": "the GPL-2.0 option of Zstandard's dual licence; BSD-3-Clause is the one used",
+        "why": "The GPL-2.0 text of Zstandard's `BSD-3-Clause OR GPL-2.0-only` licence. The BSD-3-Clause option is chosen, and zstd/LICENSE ships as the bundled source's licence."
+      }
+    }
+  },
+  "bundled_sources": [
+    {
+      "crate": "aws-lc-sys",
+      "version": "0.47.0",
+      "name": "AWS-LC",
+      "component_version": "5.12.0",
+      "license": "ISC AND Apache-2.0 AND MIT AND BSD-3-Clause",
+      "expression": "ISC AND (Apache-2.0 OR ISC) AND Apache-2.0 AND MIT AND BSD-3-Clause AND (Apache-2.0 OR ISC OR MIT) AND (Apache-2.0 OR ISC OR MIT-0)",
+      "file": "aws-lc/LICENSE",
+      "sha256": "977c541bd25ffe36975dde25c028c0cd15ddf3d08243983b58e8a6a3d9447523",
+      "homepage": "https://github.com/aws/aws-lc",
+      "extra": [
+        {
+          "file": "aws-lc/third_party/fiat/LICENSE",
+          "sha256": "43e358d7b6eb109d0f51f7b3a090fd82607965767c25fadee39e922475de2061",
+          "license": "MIT",
+          "why": "fiat-crypto's MIT licence (Copyright (c) 2015-2020 the fiat-crypto authors), the only third-party licence file in the package. Its generated field arithmetic (third_party/fiat/*.h) is compiled on every target."
+        },
+        {
+          "text": "jitterentropy-LICENSE",
+          "license": "BSD-3-Clause",
+          "notice": "Copyright (C) 2021 - 2025, Joshua E. Hill <josh@keypair.us>",
+          "notice_file": "aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-gcd.c",
+          "why": "The Jitter Entropy RNG (third_party/jitterentropy, v3.6.3) is compiled on Android and, when the SDK has CoreServices, on iOS (builder/main.rs should_build_jitter_entropy). Its sources point to a LICENSE the package leaves out, so the upstream file at v3.6.3 ships, used under its BSD option as AWS-LC elects. That file names Stephan Mueller; two source files also name Joshua E. Hill, whose line is prepended."
+        }
+      ],
+      "why": "aws-lc-sys's cc builder (\"Building with: CC\"; AWS_LC_SYS_USE_SYSTEM=0, which the fork's cargokit sets, forbids a system AWS-LC) compiles AWS-LC 5.12.0 (include/openssl/base.h AWSLC_VERSION_NUMBER_STRING) from aws-lc/crypto, generated-src and third_party on all four targets. aws-lc/LICENSE (the crate's own LICENSE has the same text, bar one trailing space) covers it: new AWS-LC code Apache-2.0 OR ISC, BoringSSL-derived ISC or Apache-2.0, OpenSSL-derived Apache-2.0 (no OpenSSL or SSLeay licence text remains since AWS-LC's 2026 relicensing), mlkem-native and mldsa-native Apache-2.0 OR ISC OR MIT, s2n-bignum Apache-2.0 OR ISC OR MIT-0 (its LICENSE is not in the package; its copyright line and those texts are in aws-lc/LICENSE), public-domain (CC0) Keccak and AES reference code. The SPDX lines of the compiled sources are exactly those (crypto: Apache-2.0, ISC, Apache-2.0 OR ISC, Apache-2.0 OR ISC OR MIT; third_party: the same plus Apache-2.0 OR ISC OR MIT-0); the files without one are perlasm output, fiat-crypto's and jitterentropy's, listed below. Used under ISC where ISC is offered."
+    },
+    {
+      "crate": "libsqlite3-sys",
+      "version": "0.38.2",
+      "name": "SQLite",
+      "component_version": "3.53.2",
+      "license": "blessing",
+      "file": "sqlite3/sqlite3.c",
+      "start": "** The author disclaims copyright to this source code.",
+      "end": "May you share freely, never taking more than you give.",
+      "strip_comment": true,
+      "sha256": "6be8b58249cfc9269b58f8ebf25f470f0354b105247713702b95bfcba28781d1",
+      "homepage": "https://sqlite.org/copyright.html",
+      "why": "The `bundled` feature compiles this amalgamation (SQLITE_VERSION 3.53.2) on both platforms. SQLite is in the public domain; this is its own notice."
+    },
+    {
+      "crate": "liblzma-sys",
+      "version": "0.4.9",
+      "name": "XZ Utils (liblzma)",
+      "component_version": "5.8.4",
+      "license": "0BSD",
+      "file": "xz/COPYING.0BSD",
+      "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1",
+      "notice": "Copyright (C) The XZ Utils authors and contributors",
+      "homepage": "https://tukaani.org/xz/",
+      "why": "The `static` feature compiles xz/src/liblzma and xz/src/common (tuklib), both 0BSD per xz/COPYING; the notice line is the one xz/COPYING suggests."
+    },
+    {
+      "crate": "zstd-sys",
+      "version": "2.1.3+zstd.1.5.7",
+      "name": "Zstandard",
+      "component_version": "1.5.7",
+      "license": "BSD-3-Clause",
+      "expression": "BSD-3-Clause OR GPL-2.0-only",
+      "file": "zstd/LICENSE",
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "homepage": "https://facebook.github.io/zstd/",
+      "absent_features": [
+        "zdict_builder",
+        "legacy"
+      ],
+      "why": "Without its pkg-config feature, zstd-sys compiles the bundled zstd/lib/common, compress and decompress. Zstandard is dual-licensed; BSD-3-Clause is chosen. Two default features would compile sources under other licences: `zdict_builder` (zstd/lib/dictBuilder, whose divsufsort.c is MIT, Copyright (c) 2003-2008 Yuta Mori, in its source header only) and `legacy` (zstd/lib/legacy, whose old-format decoders carry BSD-2-Clause blocks). They are off because zstd-safe depends on zstd-sys without default features and no crate turns them back on; generation checks with cargo tree that both stay off on every target. The Rust crates around it were relicensed with zstd 0.14 / zstd-safe 8.3 / zstd-sys 2.1: zstd and zstd-safe from MIT (OR Apache-2.0) to BSD-3-Clause (Copyright (c) 2026, Alexandre Bury), and zstd-sys to `BSD-3-Clause AND BSD-2-Clause`, its LICENSE.BSD-3-Clause for the generated bindings and LICENSE.BSD-2-Clause for the legacy decoders (compiled only with `legacy`, which is off; the text ships anyway, as the crate's own expression requires it). zstd-sys 2.1's build.rs keeps the same cc source list; its new `cmake` (same sources), `rust-backend` (libzstd-rs-sys instead of C) and `pkg-config`/`vendored` switches are off."
+    },
+    {
+      "crate": "dart-sys",
+      "version": "4.1.5",
+      "name": "Dart SDK (dart_api_dl)",
+      "component_version": "3.2.3",
+      "license": "BSD-3-Clause",
+      "file": "dart-sdk/LICENSE",
+      "sha256": "2cfa3ee8e7512e6d44c854b986510810fadc815f93f890373b3a81c1b6ccd256",
+      "homepage": "https://dart.dev/",
+      "why": "build.rs compiles the Dart SDK's dart_api_dl.c (dart-sdk/include, version 3.2.3) into the library."
+    }
+  ],
+  "native_code_reviewed": {
+    "aws-lc-rs": "Declares `links` but compiles no C of its own (the package has no C sources): build.rs only reads environment variables and re-exports aws-lc-sys's DEP_AWS_LC_* values. The AWS-LC it links is aws-lc-sys's, listed under bundled_sources.",
+    "oslog": "build.rs compiles the crate's own wrapper.c, covered by the crate's MIT licence."
+  },
+  "maven_licence_names": {
+    "The Apache Software License, Version 2.0": "Apache-2.0",
+    "The Apache License, Version 2.0": "Apache-2.0",
+    "Apache License, Version 2.0": "Apache-2.0",
+    "Apache 2.0": "Apache-2.0",
+    "Apache-2.0": "Apache-2.0",
+    "BSD-3-Clause": "BSD-3-Clause",
+    "GNU General Public License, version 2, with the Classpath Exception": "GPL-2.0-only WITH Classpath-exception-2.0",
+    "Android Software Development Kit License": "LicenseRef-Android-SDK-License",
+    "Play Core Software Development Kit Terms of Service": "LicenseRef-Play-Core-SDK-Terms"
+  },
+  "maven_notices": {
+    "androidx.datastore:datastore-preferences-external-protobuf": {
+      "text": "protobuf",
+      "why": "Its POM: 'Repackaged proto-lite dependency for use by datastore preferences', BSD-3-Clause."
+    },
+    "androidx.glance:glance-appwidget-external-protobuf": {
+      "text": "protobuf",
+      "why": "Its POM: a repackaged proto-lite for Glance, BSD-3-Clause."
+    },
+    "com.android.tools:desugar_jdk_libs_configuration": {
+      "text": "r8",
+      "why": "desugar_jdk_libs depends on it; its jar holds the conversion classes D8 adds alongside the desugared library."
+    },
+    "com.android.tools:desugar_jdk_libs": {
+      "text": "desugar_jdk_libs",
+      "why": "Core library desugaring (the app's coreLibraryDesugaring): D8/L8 compile the parts the app uses into the APK. GPL-2.0 is copyleft: its source, at the 2.1.4 release commit, is linked as with the MPL crates.",
+      "source": "https://github.com/google/desugar_jdk_libs/tree/50d9c1fb3e85fa4c00161525a45484f712c1f003"
+    }
+  },
+  "maven_embedded": [
+    {
+      "coordinate": "com.google.crypto.tink:tink-android",
+      "name": "Protocol Buffers (protobuf-javalite 4.32.1, shaded into tink-android)",
+      "license": "BSD-3-Clause",
+      "text": "protobuf",
+      "why": "tink-android 1.19.0's jar holds 543 classes under com/google/crypto/tink/shaded/protobuf/ and its POM declares no protobuf dependency (checked by listing the jar from Maven Central)."
+    }
+  ],
+  "proprietary_terms": {
+    "LicenseRef-Android-SDK-License": {
+      "name": "Android Software Development Kit License Agreement",
+      "url": "https://developer.android.com/studio/terms"
+    },
+    "LicenseRef-Play-Core-SDK-Terms": {
+      "name": "Play Core Software Development Kit Terms of Service",
+      "url": "https://developer.android.com/guide/playcore/license"
+    }
+  },
+  "toolchain": {
+    "name": "Rust standard library",
+    "version": "1.100.0",
+    "expression": "MIT OR Apache-2.0",
+    "license": "MIT",
+    "text": "rust-MIT",
+    "note": "Linked into Bag's Tor library on every target. The standard library's own third-party components are listed in COPYRIGHT-library.html, shipped with the Rust toolchain (share/doc/rust/).",
+    "why": "std, core and alloc are statically linked into librust_lib_tor. The version is the fork's rust/rust-toolchain, which generate.py checks, and the release workflow's RUST_TOOLCHAIN, which its own check ties to this entry."
+  },
+  "fonts": {},
+  "flutter_fonts": {
+    "MaterialIcons": {
+      "name": "Material Icons font",
+      "asset": "fonts/MaterialIcons-Regular.otf",
+      "when": "uses-material-design",
+      "license": "CC-BY-4.0",
+      "notice": "© Google. Release builds carry a modified copy: Flutter's icon tree shaking keeps only the glyphs Bag uses",
+      "link": "https://github.com/google/material-design-icons",
+      "text": "material-icons",
+      "flutter_file": "bin/cache/artifacts/material_fonts/MaterialIcons_LICENSE.txt",
+      "why": "pubspec.yaml's `uses-material-design: true` makes Flutter bundle fonts/MaterialIcons-Regular.otf (tree-shaken to the icons the app uses) in every build, under the licence Flutter ships with it. Neither flutter_tools' NOTICES nor sky_engine's LICENSE carries that notice, so it would otherwise be missing."
+    }
+  }
+}
