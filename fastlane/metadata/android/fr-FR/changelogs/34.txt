@@ -1,0 +1,3 @@
+• Corrigé : une devise sélectionnée pouvait disparaître de l'écran d'accueil quand une source de prix ne la fournissait pas (ex. CHF à côté de USD). Chaque devise s'affiche désormais toujours, marquée « cached » tant que son dernier cours est repris.
+• Nouveau : l'or (XAU) comme devise d'affichage – votre stack en onces troy, avec graphiques et historique DCA.
+• Prix plus fiables : une source supplémentaire sans clé couvre toutes les devises quand les autres sont indisponibles.

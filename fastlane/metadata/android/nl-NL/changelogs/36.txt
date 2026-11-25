@@ -1,0 +1,7 @@
+• Nieuw: Tor zit in Bag zelf, op Android en iOS, zonder Orbot (Pro). Orbot gebruikt voor Bag? Je kunt het uitzetten.
+• Nieuw: stuur Bag via je eigen SOCKS5- of HTTP-proxy (Pro).
+• Nieuw: tabblad Wallets voor je watch-only wallets en je instellingen voor Tor, proxy en node.
+• De widget toont of de koersen via Tor, een proxy of direct kwamen, en wanneer.
+• Pro vernieuwd: duidelijker, nog steeds eenmalig te kopen.
+• Nieuwe valuta: Oekraïense hryvnja (UAH).
+• Betere beveiliging en privacy.

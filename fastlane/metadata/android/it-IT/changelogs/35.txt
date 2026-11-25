@@ -1,0 +1,2 @@
+• Novità: modifica un acquisto — tocca una voce nel tracker DCA per correggere quantità, prezzo, data, valuta o nota.
+• Novità: rendimento per acquisto — ogni voce mostra ora il valore attuale, il profitto o la perdita e la variazione percentuale, accanto al riepilogo del portafoglio.

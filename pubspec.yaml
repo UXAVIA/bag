@@ -1,0 +1,87 @@
+name: bag
+description: "Bag — Bitcoin Portfolio Monitor"
+publish_to: 'none'
+
+version: 2.0.1+41
+
+environment:
+  # 3.13.7 is the first Dart (Flutter 3.47.8) whose dart:io distrusts the
+  # compromised eMudhra intermediates on Android (GHSA-frr6-h895-5pxp), so no
+  # SDK without that fix can resolve this app. (in_app_purchase 3.2.4+, which
+  # CI adds for the store flavor, needs only 3.10.)
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # HTTP
+  dio: ^5.8.0+1
+
+  # Local storage
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.3.5
+
+  # Charts
+  fl_chart: ^0.70.2
+
+  # Home screen widget + background refresh
+  home_widget: ^0.9.3
+  workmanager: ^0.7.0
+
+  # Sentinel: reliable foreground service for always-on wallet monitoring
+  flutter_foreground_task: ^8.13.0
+
+  intl: ^0.20.2
+  uuid: ^4.5.3
+  url_launcher: ^6.3.2
+  flutter_local_notifications: ^19.5.0
+  pointycastle: ^4.0.0
+  flutter_secure_storage: ^10.0.0
+  local_auth: ^2.3.0
+  flutter_svg: ^2.0.17
+  ed25519_edwards: ^0.3.1
+
+  # Embedded Tor (Arti), from the public UXAVIA fork at an exact commit
+  # (branch bag/0.2.2). Building any platform compiles its Rust from source,
+  # so it needs a Rust toolchain; `flutter test` and `flutter analyze` don't.
+  tor:
+    git:
+      url: https://github.com/UXAVIA/tor.git
+      ref: 3c379bc176f1a2d50ac5229e25fa272514d34d31
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  fake_async: ^1.3.3
+  # test/pro/action_locks_test.dart holds secure-storage reads and deletes
+  # (flutter_secure_storage doesn't re-export its platform interface).
+  flutter_secure_storage_platform_interface: ^2.0.1
+  build_runner: ^2.4.14
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/icon.png"
+  image_path_ios: "assets/icons/icon_ios.png"
+  min_sdk_android: 23
+  adaptive_icon_background: "#13131A"
+  adaptive_icon_foreground: "assets/icons/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/seed/
+    - assets/licenses/

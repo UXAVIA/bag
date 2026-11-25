@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Route badge dot, the route delivered the last price (Task A5). Direct has no dot. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#00C896" />
+    <size
+        android:width="6dp"
+        android:height="6dp" />
+</shape>

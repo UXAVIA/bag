@@ -1,0 +1,7 @@
+• Nouveau : Tor intégré à Bag sur Android et iOS, sans Orbot (Pro). Orbot utilisé pour Bag ? Vous pouvez le couper.
+• Nouveau : proxy SOCKS5 ou HTTP personnalisé (Pro).
+• Nouveau : l'onglet « Wallets » réunit portefeuilles en lecture seule et réglages Tor, proxy et nœud.
+• Le widget indique si les cours passent par Tor, un proxy ou en direct, et quand.
+• Pro repensé, plus clair, toujours en achat unique.
+• Nouvelle devise : hryvnia ukrainienne (UAH).
+• Sécurité et confidentialité renforcées.

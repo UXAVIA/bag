@@ -1,0 +1,2 @@
+• New: edit a purchase — tap any entry in the DCA tracker to correct the amount, price, date, currency or note.
+• New: per-purchase performance — every entry now shows its current value, profit or loss and percentage change, alongside the portfolio summary.

@@ -1,0 +1,3 @@
+• Corregido: una moneda seleccionada podía desaparecer de la pantalla de inicio cuando una fuente de precios no la cotizaba (p. ej. CHF junto a USD). Ahora todas las monedas se muestran siempre, marcadas como «cached» mientras se conserva su último precio.
+• Nuevo: oro (XAU) como moneda de visualización: tu stack en onzas troy, con gráficos e historial DCA.
+• Precios más robustos: una fuente adicional sin clave cubre todas las monedas cuando las demás fallan.

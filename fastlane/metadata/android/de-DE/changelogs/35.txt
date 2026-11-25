@@ -1,0 +1,2 @@
+• Neu: Käufe bearbeiten – tippe im DCA-Tracker auf einen Eintrag, um Menge, Preis, Datum, Währung oder Notiz zu korrigieren.
+• Neu: Performance pro Kauf – jeder Eintrag zeigt jetzt aktuellen Wert, Gewinn oder Verlust und prozentuale Veränderung, zusätzlich zur Portfolio-Übersicht.

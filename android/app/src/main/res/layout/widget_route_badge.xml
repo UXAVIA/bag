@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Route badge (Task A5): Tor, Proxy or Direct, with a dot for Tor and
+     Proxy (green while the route delivers, red when paused). Hidden until
+     the app has mirrored the route; BagWidget.kt sets all of it. Included by
+     bag_widget_small, bag_widget and bag_widget_large, each setting its
+     size and margin on the include. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_route_badge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:background="@drawable/widget_route_badge_direct"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/widget_route_dot"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/widget_route_dot_ok"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/widget_route_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="9sp"
+        android:textColor="#A9A9C4"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1" />
+
+</LinearLayout>

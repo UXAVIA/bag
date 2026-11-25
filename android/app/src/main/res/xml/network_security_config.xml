@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Explicitly disallows cleartext (plain HTTP) traffic for all network calls.
+    minSdk=24 already blocks cleartext by default, but an explicit declaration
+    documents intent and prevents accidental http:// regressions in the future.
+
+    .onion custom explorer URLs over Tor use HTTP at the transport layer but
+    never traverse a plaintext network hop — the Tor circuit provides
+    end-to-end encryption before any exit node. This policy still applies to
+    DNS and IP-addressed connections; .onion addresses resolve inside Tor.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

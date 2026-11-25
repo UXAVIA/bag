@@ -1,0 +1,7 @@
+• Nowość: Tor wbudowany w Bag na Androidzie i iOS, bez Orbota (Pro). Korzystasz z Orbota dla Bag? Możesz go wyłączyć.
+• Nowość: kieruj ruch Bag przez własne proxy SOCKS5 lub HTTP (Pro).
+• Nowość: karta „Wallets” z portfelami tylko do podglądu oraz ustawieniami Tora, proxy i węzła.
+• Widżet pokazuje, czy ceny przyszły przez Tor, proxy czy bezpośrednio, i kiedy.
+• Nowy wygląd Pro: jaśniej, nadal jako jednorazowy zakup.
+• Nowa waluta: hrywna ukraińska (UAH).
+• Większe bezpieczeństwo i prywatność.
