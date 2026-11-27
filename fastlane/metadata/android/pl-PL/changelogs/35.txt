@@ -1,0 +1,2 @@
+• Nowość: edycja zakupu — dotknij wpisu w trackerze DCA, aby poprawić ilość, cenę, datę, walutę lub notatkę.
+• Nowość: wynik każdego zakupu — każdy wpis pokazuje teraz bieżącą wartość, zysk lub stratę i zmianę procentową, obok podsumowania portfela.

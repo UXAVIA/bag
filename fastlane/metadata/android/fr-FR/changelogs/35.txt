@@ -1,0 +1,2 @@
+• Nouveau : modifiez un achat — touchez une entrée du suivi DCA pour corriger le montant, le prix, la date, la devise ou la note.
+• Nouveau : performance par achat — chaque entrée affiche désormais sa valeur actuelle, son gain ou sa perte et sa variation en pourcentage, en plus du résumé du portefeuille.

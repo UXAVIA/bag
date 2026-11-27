@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Route badge dot, the last fetch didn't get through (Task A5). Direct has no dot. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#FF4757" />
+    <size
+        android:width="6dp"
+        android:height="6dp" />
+</shape>

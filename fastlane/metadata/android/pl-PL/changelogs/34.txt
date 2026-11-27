@@ -1,0 +1,3 @@
+• Naprawiono: wybrana waluta mogła znikać z ekranu głównego, gdy źródło cen jej nie podawało (np. CHF obok USD). Teraz każda waluta jest zawsze widoczna, oznaczona „cached”, dopóki używany jest jej ostatni kurs.
+• Nowość: złoto (XAU) jako waluta wyświetlania – Twój stack w uncjach trojańskich, z wykresami i historią DCA.
+• Stabilniejsze ceny: dodatkowe źródło bez klucza obejmuje wszystkie waluty, gdy pozostałe nie działają.

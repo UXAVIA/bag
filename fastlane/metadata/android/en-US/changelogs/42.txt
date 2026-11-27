@@ -1,0 +1,3 @@
+• New on iPhone: Sentinel Lite (Pro). Bag checks your watch-only wallets whenever iOS lets it run in the background, through Tor, your proxy or directly, and alerts you to incoming and outgoing transactions, pending and confirmed.
+• iOS decides how often it runs, so alerts can be late. The widget shows when it last checked.
+• Sentinel on Android works as before. Plus small fixes.

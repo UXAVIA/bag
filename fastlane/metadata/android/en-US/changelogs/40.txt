@@ -1,0 +1,7 @@
+• New: Tor built into Bag on Android and iOS — no Orbot needed (Pro). Used Orbot for Bag? You can turn it off.
+• New: route Bag through your own SOCKS5 or HTTP proxy (Pro).
+• New: a Wallets tab for your watch-only wallets, Tor, proxy and node settings.
+• The widget shows whether prices came via Tor, a proxy or directly, and when.
+• Redesigned Pro: clearer, still a one-time purchase.
+• New currency: Ukrainian hryvnia (UAH).
+• Security and privacy hardening throughout.

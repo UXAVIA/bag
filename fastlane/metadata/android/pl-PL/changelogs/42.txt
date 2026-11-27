@@ -1,0 +1,3 @@
+• Nowość na iPhonie: Sentinel Lite (Pro). Bag sprawdza Twoje portfele tylko do podglądu, gdy tylko iOS pozwoli mu działać w tle – przez Tora, Twoje proxy lub bezpośrednio – i powiadamia o transakcjach przychodzących i wychodzących, oczekujących i potwierdzonych.
+• To iOS decyduje, jak często, więc powiadomienia mogą się spóźniać. Widżet pokazuje, kiedy ostatnio sprawdzono.
+• Sentinel na Androidzie działa jak dotąd. Do tego drobne poprawki.

@@ -1,0 +1,3 @@
+• Novità su iPhone: Sentinel Lite (Pro). Bag controlla i tuoi wallet in sola lettura ogni volta che iOS gli permette di funzionare in background, tramite Tor, il tuo proxy o in diretta, e ti avvisa delle transazioni in entrata e in uscita, in attesa e confermate.
+• È iOS a decidere quanto spesso, quindi gli avvisi possono arrivare in ritardo. Il widget mostra l'ultimo controllo.
+• Sentinel su Android funziona come prima. E piccole correzioni.

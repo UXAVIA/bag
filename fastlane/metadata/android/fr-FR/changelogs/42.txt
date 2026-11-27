@@ -1,0 +1,3 @@
+• Nouveau sur iPhone : Sentinel Lite (Pro). Bag vérifie vos portefeuilles en lecture seule chaque fois qu'iOS le laisse tourner en arrière-plan, via Tor, votre proxy ou en direct, et vous alerte des transactions entrantes et sortantes, en attente et confirmées.
+• iOS décide de la fréquence, les alertes peuvent donc arriver en retard. Le widget indique la dernière vérification.
+• Sentinel sur Android fonctionne comme avant. Et quelques corrections.

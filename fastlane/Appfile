@@ -1,0 +1,4 @@
+app_identifier("app.bitbag")
+
+# Team is implied by the App Store Connect API key, so no apple_id /
+# team_id here — that keeps the file free of account identifiers.

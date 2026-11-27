@@ -1,0 +1,1627 @@
+{
+ "generated_by": "tools/licenses/generate.sh",
+ "flutter": "3.47.9",
+ "method": [
+  "The libraries the Android build packages, besides Flutter's engine (whose notices Flutter lists itself). The app, each plugin it uses (its `android/build.gradle`) and the Flutter Android embedding declare the libraries marked *Declared by*; the Kotlin Gradle plugin adds `kotlin-stdlib` to every Kotlin module. Their own runtime dependencies, marked *Required by*, come from the libraries' Maven POMs, at the highest version requested, as Gradle picks it. That is read from the published metadata, not from a Gradle build, so it can list a little more than the APK holds.",
+  "Libraries marked *Google Play build only* come with the in-app purchase and rating plugins CI adds to the Play build; the GitHub and F-Droid builds don't contain them. Some of them are proprietary Google libraries, distributed under Google's terms, which are linked rather than reproduced."
+ ],
+ "texts": {
+  "Apache-2.0": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n",
+  "desugar_jdk_libs": "The GNU General Public License (GPL)\n\nVersion 2, June 1991\n\nCopyright (C) 1989, 1991 Free Software Foundation, Inc.\n51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n\nEveryone is permitted to copy and distribute verbatim copies of this license\ndocument, but changing it is not allowed.\n\nPreamble\n\nThe licenses for most software are designed to take away your freedom to share\nand change it.  By contrast, the GNU General Public License is intended to\nguarantee your freedom to share and change free software--to make sure the\nsoftware is free for all its users.  This General Public License applies to\nmost of the Free Software Foundation's software and to any other program whose\nauthors commit to using it.  (Some other Free Software Foundation software is\ncovered by the GNU Library General Public License instead.) You can apply it to\nyour programs, too.\n\nWhen we speak of free software, we are referring to freedom, not price.  Our\nGeneral Public Licenses are designed to make sure that you have the freedom to\ndistribute copies of free software (and charge for this service if you wish),\nthat you receive source code or can get it if you want it, that you can change\nthe software or use pieces of it in new free programs; and that you know you\ncan do these things.\n\nTo protect your rights, we need to make restrictions that forbid anyone to deny\nyou these rights or to ask you to surrender the rights.  These restrictions\ntranslate to certain responsibilities for you if you distribute copies of the\nsoftware, or if you modify it.\n\nFor example, if you distribute copies of such a program, whether gratis or for\na fee, you must give the recipients all the rights that you have.  You must\nmake sure that they, too, receive or can get the source code.  And you must\nshow them these terms so they know their rights.\n\nWe protect your rights with two steps: (1) copyright the software, and (2)\noffer you this license which gives you legal permission to copy, distribute\nand/or modify the software.\n\nAlso, for each author's protection and ours, we want to make certain that\neveryone understands that there is no warranty for this free software.  If the\nsoftware is modified by someone else and passed on, we want its recipients to\nknow that what they have is not the original, so that any problems introduced\nby others will not reflect on the original authors' reputations.\n\nFinally, any free program is threatened constantly by software patents.  We\nwish to avoid the danger that redistributors of a free program will\nindividually obtain patent licenses, in effect making the program proprietary.\nTo prevent this, we have made it clear that any patent must be licensed for\neveryone's free use or not licensed at all.\n\nThe precise terms and conditions for copying, distribution and modification\nfollow.\n\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n0. This License applies to any program or other work which contains a notice\nplaced by the copyright holder saying it may be distributed under the terms of\nthis General Public License.  The \"Program\", below, refers to any such program\nor work, and a \"work based on the Program\" means either the Program or any\nderivative work under copyright law: that is to say, a work containing the\nProgram or a portion of it, either verbatim or with modifications and/or\ntranslated into another language.  (Hereinafter, translation is included\nwithout limitation in the term \"modification\".) Each licensee is addressed as\n\"you\".\n\nActivities other than copying, distribution and modification are not covered by\nthis License; they are outside its scope.  The act of running the Program is\nnot restricted, and the output from the Program is covered only if its contents\nconstitute a work based on the Program (independent of having been made by\nrunning the Program).  Whether that is true depends on what the Program does.\n\n1. You may copy and distribute verbatim copies of the Program's source code as\nyou receive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice and\ndisclaimer of warranty; keep intact all the notices that refer to this License\nand to the absence of any warranty; and give any other recipients of the\nProgram a copy of this License along with the Program.\n\nYou may charge a fee for the physical act of transferring a copy, and you may\nat your option offer warranty protection in exchange for a fee.\n\n2. You may modify your copy or copies of the Program or any portion of it, thus\nforming a work based on the Program, and copy and distribute such modifications\nor work under the terms of Section 1 above, provided that you also meet all of\nthese conditions:\n\n    a) You must cause the modified files to carry prominent notices stating\n    that you changed the files and the date of any change.\n\n    b) You must cause any work that you distribute or publish, that in whole or\n    in part contains or is derived from the Program or any part thereof, to be\n    licensed as a whole at no charge to all third parties under the terms of\n    this License.\n\n    c) If the modified program normally reads commands interactively when run,\n    you must cause it, when started running for such interactive use in the\n    most ordinary way, to print or display an announcement including an\n    appropriate copyright notice and a notice that there is no warranty (or\n    else, saying that you provide a warranty) and that users may redistribute\n    the program under these conditions, and telling the user how to view a copy\n    of this License.  (Exception: if the Program itself is interactive but does\n    not normally print such an announcement, your work based on the Program is\n    not required to print an announcement.)\n\nThese requirements apply to the modified work as a whole.  If identifiable\nsections of that work are not derived from the Program, and can be reasonably\nconsidered independent and separate works in themselves, then this License, and\nits terms, do not apply to those sections when you distribute them as separate\nworks.  But when you distribute the same sections as part of a whole which is a\nwork based on the Program, the distribution of the whole must be on the terms\nof this License, whose permissions for other licensees extend to the entire\nwhole, and thus to each and every part regardless of who wrote it.\n\nThus, it is not the intent of this section to claim rights or contest your\nrights to work written entirely by you; rather, the intent is to exercise the\nright to control the distribution of derivative or collective works based on\nthe Program.\n\nIn addition, mere aggregation of another work not based on the Program with the\nProgram (or with a work based on the Program) on a volume of a storage or\ndistribution medium does not bring the other work under the scope of this\nLicense.\n\n3. You may copy and distribute the Program (or a work based on it, under\nSection 2) in object code or executable form under the terms of Sections 1 and\n2 above provided that you also do one of the following:\n\n    a) Accompany it with the complete corresponding machine-readable source\n    code, which must be distributed under the terms of Sections 1 and 2 above\n    on a medium customarily used for software interchange; or,\n\n    b) Accompany it with a written offer, valid for at least three years, to\n    give any third party, for a charge no more than your cost of physically\n    performing source distribution, a complete machine-readable copy of the\n    corresponding source code, to be distributed under the terms of Sections 1\n    and 2 above on a medium customarily used for software interchange; or,\n\n    c) Accompany it with the information you received as to the offer to\n    distribute corresponding source code.  (This alternative is allowed only\n    for noncommercial distribution and only if you received the program in\n    object code or executable form with such an offer, in accord with\n    Subsection b above.)\n\nThe source code for a work means the preferred form of the work for making\nmodifications to it.  For an executable work, complete source code means all\nthe source code for all modules it contains, plus any associated interface\ndefinition files, plus the scripts used to control compilation and installation\nof the executable.  However, as a special exception, the source code\ndistributed need not include anything that is normally distributed (in either\nsource or binary form) with the major components (compiler, kernel, and so on)\nof the operating system on which the executable runs, unless that component\nitself accompanies the executable.\n\nIf distribution of executable or object code is made by offering access to copy\nfrom a designated place, then offering equivalent access to copy the source\ncode from the same place counts as distribution of the source code, even though\nthird parties are not compelled to copy the source along with the object code.\n\n4. You may not copy, modify, sublicense, or distribute the Program except as\nexpressly provided under this License.  Any attempt otherwise to copy, modify,\nsublicense or distribute the Program is void, and will automatically terminate\nyour rights under this License.  However, parties who have received copies, or\nrights, from you under this License will not have their licenses terminated so\nlong as such parties remain in full compliance.\n\n5. You are not required to accept this License, since you have not signed it.\nHowever, nothing else grants you permission to modify or distribute the Program\nor its derivative works.  These actions are prohibited by law if you do not\naccept this License.  Therefore, by modifying or distributing the Program (or\nany work based on the Program), you indicate your acceptance of this License to\ndo so, and all its terms and conditions for copying, distributing or modifying\nthe Program or works based on it.\n\n6. Each time you redistribute the Program (or any work based on the Program),\nthe recipient automatically receives a license from the original licensor to\ncopy, distribute or modify the Program subject to these terms and conditions.\nYou may not impose any further restrictions on the recipients' exercise of the\nrights granted herein.  You are not responsible for enforcing compliance by\nthird parties to this License.\n\n7. If, as a consequence of a court judgment or allegation of patent\ninfringement or for any other reason (not limited to patent issues), conditions\nare imposed on you (whether by court order, agreement or otherwise) that\ncontradict the conditions of this License, they do not excuse you from the\nconditions of this License.  If you cannot distribute so as to satisfy\nsimultaneously your obligations under this License and any other pertinent\nobligations, then as a consequence you may not distribute the Program at all.\nFor example, if a patent license would not permit royalty-free redistribution\nof the Program by all those who receive copies directly or indirectly through\nyou, then the only way you could satisfy both it and this License would be to\nrefrain entirely from distribution of the Program.\n\nIf any portion of this section is held invalid or unenforceable under any\nparticular circumstance, the balance of the section is intended to apply and\nthe section as a whole is intended to apply in other circumstances.\n\nIt is not the purpose of this section to induce you to infringe any patents or\nother property right claims or to contest validity of any such claims; this\nsection has the sole purpose of protecting the integrity of the free software\ndistribution system, which is implemented by public license practices.  Many\npeople have made generous contributions to the wide range of software\ndistributed through that system in reliance on consistent application of that\nsystem; it is up to the author/donor to decide if he or she is willing to\ndistribute software through any other system and a licensee cannot impose that\nchoice.\n\nThis section is intended to make thoroughly clear what is believed to be a\nconsequence of the rest of this License.\n\n8. If the distribution and/or use of the Program is restricted in certain\ncountries either by patents or by copyrighted interfaces, the original\ncopyright holder who places the Program under this License may add an explicit\ngeographical distribution limitation excluding those countries, so that\ndistribution is permitted only in or among countries not thus excluded.  In\nsuch case, this License incorporates the limitation as if written in the body\nof this License.\n\n9. The Free Software Foundation may publish revised and/or new versions of the\nGeneral Public License from time to time.  Such new versions will be similar in\nspirit to the present version, but may differ in detail to address new problems\nor concerns.\n\nEach version is given a distinguishing version number.  If the Program\nspecifies a version number of this License which applies to it and \"any later\nversion\", you have the option of following the terms and conditions either of\nthat version or of any later version published by the Free Software Foundation.\nIf the Program does not specify a version number of this License, you may\nchoose any version ever published by the Free Software Foundation.\n\n10. If you wish to incorporate parts of the Program into other free programs\nwhose distribution conditions are different, write to the author to ask for\npermission.  For software which is copyrighted by the Free Software Foundation,\nwrite to the Free Software Foundation; we sometimes make exceptions for this.\nOur decision will be guided by the two goals of preserving the free status of\nall derivatives of our free software and of promoting the sharing and reuse of\nsoftware generally.\n\nNO WARRANTY\n\n11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR\nTHE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN OTHERWISE\nSTATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE\nPROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND\nPERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE,\nYOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL\nANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE\nPROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\nGENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR\nINABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA\nBEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A\nFAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER\nOR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\nEND OF TERMS AND CONDITIONS\n\nHow to Apply These Terms to Your New Programs\n\nIf you develop a new program, and you want it to be of the greatest possible\nuse to the public, the best way to achieve this is to make it free software\nwhich everyone can redistribute and change under these terms.\n\nTo do so, attach the following notices to the program.  It is safest to attach\nthem to the start of each source file to most effectively convey the exclusion\nof warranty; and each file should have at least the \"copyright\" line and a\npointer to where the full notice is found.\n\n    One line to give the program's name and a brief idea of what it does.\n\n    Copyright (C) <year> <name of author>\n\n    This program is free software; you can redistribute it and/or modify it\n    under the terms of the GNU General Public License as published by the Free\n    Software Foundation; either version 2 of the License, or (at your option)\n    any later version.\n\n    This program is distributed in the hope that it will be useful, but WITHOUT\n    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or\n    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for\n    more details.\n\n    You should have received a copy of the GNU General Public License along\n    with this program; if not, write to the Free Software Foundation, Inc.,\n    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAlso add information on how to contact you by electronic and paper mail.\n\nIf the program is interactive, make it output a short notice like this when it\nstarts in an interactive mode:\n\n    Gnomovision version 69, Copyright (C) year name of author Gnomovision comes\n    with ABSOLUTELY NO WARRANTY; for details type 'show w'.  This is free\n    software, and you are welcome to redistribute it under certain conditions;\n    type 'show c' for details.\n\nThe hypothetical commands 'show w' and 'show c' should show the appropriate\nparts of the General Public License.  Of course, the commands you use may be\ncalled something other than 'show w' and 'show c'; they could even be\nmouse-clicks or menu items--whatever suits your program.\n\nYou should also get your employer (if you work as a programmer) or your school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.  Here\nis a sample; alter the names:\n\n    Yoyodyne, Inc., hereby disclaims all copyright interest in the program\n    'Gnomovision' (which makes passes at compilers) written by James Hacker.\n\n    signature of Ty Coon, 1 April 1989\n\n    Ty Coon, President of Vice\n\nThis General Public License does not permit incorporating your program into\nproprietary programs.  If your program is a subroutine library, you may\nconsider it more useful to permit linking proprietary applications with the\nlibrary.  If this is what you want to do, use the GNU Library General Public\nLicense instead of this License.\n\n\n\"CLASSPATH\" EXCEPTION TO THE GPL\n\nCertain source files distributed by Oracle America and/or its affiliates are\nsubject to the following clarification and special exception to the GPL, but\nonly where Oracle has expressly included in the particular source file's header\nthe words \"Oracle designates this particular file as subject to the \"Classpath\"\nexception as provided by Oracle in the LICENSE file that accompanied this code.\"\n\n    Linking this library statically or dynamically with other modules is making\n    a combined work based on this library.  Thus, the terms and conditions of\n    the GNU General Public License cover the whole combination.\n\n    As a special exception, the copyright holders of this library give you\n    permission to link this library with independent modules to produce an\n    executable, regardless of the license terms of these independent modules,\n    and to copy and distribute the resulting executable under terms of your\n    choice, provided that you also meet, for each linked independent module,\n    the terms and conditions of the license of that module.  An independent\n    module is a module which is not derived from or based on this library.  If\n    you modify this library, you may extend this exception to your version of\n    the library, but you are not obligated to do so.  If you do not wish to do\n    so, delete this exception statement from your version.\n",
+  "protobuf": "Copyright 2008 Google Inc.  All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n    * Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above\ncopyright notice, this list of conditions and the following disclaimer\nin the documentation and/or other materials provided with the\ndistribution.\n    * Neither the name of Google Inc. nor the names of its\ncontributors may be used to endorse or promote products derived from\nthis software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nCode generated by the Protocol Buffer compiler is owned by the owner\nof the input file used when generating it.  This code is not\nstandalone and requires a support library to be linked with it.  This\nsupport library is itself covered by the above license.\n",
+  "r8": "Copyright (c) 2016, the R8 project authors.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\n* Neither the name of Google Inc. nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+ },
+ "terms": {
+  "LicenseRef-Android-SDK-License": {
+   "name": "Android Software Development Kit License Agreement",
+   "url": "https://developer.android.com/studio/terms"
+  },
+  "LicenseRef-Play-Core-SDK-Terms": {
+   "name": "Play Core Software Development Kit Terms of Service",
+   "url": "https://developer.android.com/guide/playcore/license"
+  }
+ },
+ "libraries": [
+  {
+   "coordinate": "androidx.activity:activity",
+   "version": "1.8.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity-ktx",
+    "androidx.biometric:biometric",
+    "androidx.fragment:fragment"
+   ]
+  },
+  {
+   "coordinate": "androidx.activity:activity-ktx",
+   "version": "1.5.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.fragment:fragment-ktx",
+    "androidx.preference:preference"
+   ]
+  },
+  {
+   "coordinate": "androidx.annotation:annotation",
+   "version": "1.9.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding",
+    "flutter_plugin_android_lifecycle 2.0.31",
+    "path_provider_android 2.2.19",
+    "url_launcher_android 6.3.20"
+   ]
+  },
+  {
+   "coordinate": "androidx.annotation:annotation-experimental",
+   "version": "1.4.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.browser:browser",
+    "androidx.core:core",
+    "androidx.fragment:fragment",
+    "androidx.glance:glance",
+    "androidx.room:room-runtime-android",
+    "androidx.work:work-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.annotation:annotation-jvm",
+   "version": "1.9.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.annotation:annotation",
+    "androidx.collection:collection-jvm",
+    "androidx.datastore:datastore-core-android",
+    "androidx.datastore:datastore-core-jvm",
+    "androidx.room:room-common-jvm",
+    "androidx.sqlite:sqlite-android",
+    "androidx.sqlite:sqlite-framework-android",
+    "com.google.crypto.tink:tink-android"
+   ]
+  },
+  {
+   "coordinate": "androidx.appcompat:appcompat",
+   "version": "1.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.biometric:biometric",
+    "androidx.preference:preference"
+   ]
+  },
+  {
+   "coordinate": "androidx.appcompat:appcompat-resources",
+   "version": "1.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.appcompat:appcompat"
+   ]
+  },
+  {
+   "coordinate": "androidx.arch.core:core-common",
+   "version": "2.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.arch.core:core-runtime",
+    "androidx.lifecycle:lifecycle-livedata",
+    "androidx.lifecycle:lifecycle-livedata-core",
+    "androidx.lifecycle:lifecycle-runtime",
+    "androidx.savedstate:savedstate"
+   ]
+  },
+  {
+   "coordinate": "androidx.arch.core:core-runtime",
+   "version": "2.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.lifecycle:lifecycle-livedata",
+    "androidx.lifecycle:lifecycle-livedata-core",
+    "androidx.lifecycle:lifecycle-runtime",
+    "androidx.room:room-runtime-android"
+   ]
+  },
+  {
+   "coordinate": "androidx.asynclayoutinflater:asynclayoutinflater",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.legacy:legacy-support-core-ui"
+   ]
+  },
+  {
+   "coordinate": "androidx.biometric:biometric",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "local_auth_android 1.0.52"
+   ]
+  },
+  {
+   "coordinate": "androidx.browser:browser",
+   "version": "1.8.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "url_launcher_android 6.3.20"
+   ]
+  },
+  {
+   "coordinate": "androidx.collection:collection",
+   "version": "1.4.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity",
+    "androidx.appcompat:appcompat",
+    "androidx.appcompat:appcompat-resources",
+    "androidx.browser:browser",
+    "androidx.collection:collection-ktx",
+    "androidx.core:core",
+    "androidx.customview:customview",
+    "androidx.fragment:fragment",
+    "androidx.media:media",
+    "androidx.preference:preference",
+    "androidx.room:room-runtime",
+    "androidx.transition:transition",
+    "androidx.vectordrawable:vectordrawable",
+    "androidx.vectordrawable:vectordrawable-animated",
+    "androidx.versionedparcelable:versionedparcelable",
+    "androidx.window:window"
+   ]
+  },
+  {
+   "coordinate": "androidx.collection:collection-jvm",
+   "version": "1.4.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.collection:collection",
+    "androidx.room:room-runtime-android"
+   ]
+  },
+  {
+   "coordinate": "androidx.collection:collection-ktx",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.fragment:fragment-ktx"
+   ]
+  },
+  {
+   "coordinate": "androidx.compose.runtime:runtime",
+   "version": "1.2.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.compose.ui:ui-geometry",
+    "androidx.compose.ui:ui-graphics",
+    "androidx.compose.ui:ui-unit",
+    "androidx.glance:glance",
+    "androidx.glance:glance-appwidget"
+   ]
+  },
+  {
+   "coordinate": "androidx.compose.ui:ui-geometry",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.compose.ui:ui-unit"
+   ]
+  },
+  {
+   "coordinate": "androidx.compose.ui:ui-graphics",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.glance:glance",
+    "androidx.glance:glance-appwidget"
+   ]
+  },
+  {
+   "coordinate": "androidx.compose.ui:ui-unit",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.compose.ui:ui-graphics",
+    "androidx.glance:glance",
+    "androidx.glance:glance-appwidget"
+   ]
+  },
+  {
+   "coordinate": "androidx.compose.ui:ui-util",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.compose.ui:ui-geometry",
+    "androidx.compose.ui:ui-graphics",
+    "androidx.compose.ui:ui-unit"
+   ]
+  },
+  {
+   "coordinate": "androidx.concurrent:concurrent-futures",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "workmanager 0.7.0"
+   ]
+  },
+  {
+   "coordinate": "androidx.concurrent:concurrent-futures-ktx",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.glance:glance",
+    "androidx.work:work-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.coordinatorlayout:coordinatorlayout",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.legacy:legacy-support-core-ui"
+   ]
+  },
+  {
+   "coordinate": "androidx.core:core",
+   "version": "1.13.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding",
+    "flutter_local_notifications 19.5.0",
+    "local_auth_android 1.0.52",
+    "url_launcher_android 6.3.20"
+   ]
+  },
+  {
+   "coordinate": "androidx.core:core-ktx",
+   "version": "1.13.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "flutter_foreground_task 8.17.0"
+   ]
+  },
+  {
+   "coordinate": "androidx.core:core-remoteviews",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.glance:glance-appwidget"
+   ]
+  },
+  {
+   "coordinate": "androidx.core:core-splashscreen",
+   "version": "1.0.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Bag"
+   ]
+  },
+  {
+   "coordinate": "androidx.cursoradapter:cursoradapter",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.appcompat:appcompat",
+    "androidx.legacy:legacy-support-core-ui"
+   ]
+  },
+  {
+   "coordinate": "androidx.customview:customview",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.coordinatorlayout:coordinatorlayout",
+    "androidx.drawerlayout:drawerlayout",
+    "androidx.legacy:legacy-support-core-ui",
+    "androidx.slidingpanelayout:slidingpanelayout",
+    "androidx.viewpager:viewpager"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "shared_preferences_android 2.4.13"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-android",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-core",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore",
+    "androidx.datastore:datastore-android",
+    "androidx.datastore:datastore-core-okio",
+    "androidx.datastore:datastore-preferences-core",
+    "androidx.glance:glance",
+    "androidx.glance:glance-appwidget"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-core-android",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-core"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-core-jvm",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-core-okio-jvm",
+    "androidx.datastore:datastore-preferences-core-jvm"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-core-okio",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore",
+    "androidx.datastore:datastore-android",
+    "androidx.datastore:datastore-preferences-core"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-core-okio-jvm",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-core-okio",
+    "androidx.datastore:datastore-preferences-core-jvm"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-preferences",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "shared_preferences_android 2.4.13"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-preferences-android",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-preferences"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-preferences-core",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-preferences",
+    "androidx.datastore:datastore-preferences-android",
+    "androidx.glance:glance",
+    "androidx.glance:glance-appwidget"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-preferences-core-jvm",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-preferences-core"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-preferences-external-protobuf",
+   "version": "1.1.7",
+   "license": "BSD-3-Clause",
+   "flavor": "all",
+   "text": "protobuf",
+   "required_by": [
+    "androidx.datastore:datastore-preferences-proto"
+   ]
+  },
+  {
+   "coordinate": "androidx.datastore:datastore-preferences-proto",
+   "version": "1.1.7",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-preferences-core-jvm"
+   ]
+  },
+  {
+   "coordinate": "androidx.documentfile:documentfile",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.legacy:legacy-support-core-utils"
+   ]
+  },
+  {
+   "coordinate": "androidx.drawerlayout:drawerlayout",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.appcompat:appcompat",
+    "androidx.legacy:legacy-support-core-ui"
+   ]
+  },
+  {
+   "coordinate": "androidx.exifinterface:exifinterface",
+   "version": "1.4.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding"
+   ]
+  },
+  {
+   "coordinate": "androidx.fragment:fragment",
+   "version": "1.8.8",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding",
+    "local_auth_android 1.0.52"
+   ]
+  },
+  {
+   "coordinate": "androidx.fragment:fragment-ktx",
+   "version": "1.3.6",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.preference:preference"
+   ]
+  },
+  {
+   "coordinate": "androidx.glance:glance",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.glance:glance-appwidget"
+   ]
+  },
+  {
+   "coordinate": "androidx.glance:glance-appwidget",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "home_widget 0.9.3"
+   ]
+  },
+  {
+   "coordinate": "androidx.glance:glance-appwidget-external-protobuf",
+   "version": "1.1.1",
+   "license": "BSD-3-Clause",
+   "flavor": "all",
+   "text": "protobuf",
+   "required_by": [
+    "androidx.glance:glance-appwidget-proto"
+   ]
+  },
+  {
+   "coordinate": "androidx.glance:glance-appwidget-proto",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.glance:glance-appwidget"
+   ]
+  },
+  {
+   "coordinate": "androidx.interpolator:interpolator",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.browser:browser",
+    "androidx.core:core",
+    "androidx.legacy:legacy-support-core-ui",
+    "androidx.swiperefreshlayout:swiperefreshlayout",
+    "androidx.vectordrawable:vectordrawable-animated"
+   ]
+  },
+  {
+   "coordinate": "androidx.legacy:legacy-support-core-ui",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.recyclerview:recyclerview"
+   ]
+  },
+  {
+   "coordinate": "androidx.legacy:legacy-support-core-utils",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.legacy:legacy-support-core-ui"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-common",
+   "version": "2.7.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-common-java8",
+   "version": "2.7.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-livedata",
+   "version": "2.6.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.loader:loader",
+    "androidx.work:work-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-livedata-core",
+   "version": "2.6.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.biometric:biometric",
+    "androidx.fragment:fragment",
+    "androidx.lifecycle:lifecycle-livedata",
+    "androidx.lifecycle:lifecycle-livedata-core-ktx",
+    "androidx.lifecycle:lifecycle-viewmodel-savedstate"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-livedata-core-ktx",
+   "version": "2.3.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.fragment:fragment-ktx"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-process",
+   "version": "2.7.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-runtime",
+   "version": "2.7.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-runtime-ktx",
+   "version": "2.5.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity-ktx"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-service",
+   "version": "2.6.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.work:work-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-viewmodel",
+   "version": "2.6.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity",
+    "androidx.biometric:biometric",
+    "androidx.fragment:fragment",
+    "androidx.lifecycle:lifecycle-viewmodel-ktx",
+    "androidx.lifecycle:lifecycle-viewmodel-savedstate",
+    "androidx.loader:loader"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-viewmodel-ktx",
+   "version": "2.5.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity-ktx",
+    "androidx.fragment:fragment-ktx"
+   ]
+  },
+  {
+   "coordinate": "androidx.lifecycle:lifecycle-viewmodel-savedstate",
+   "version": "2.6.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity",
+    "androidx.fragment:fragment"
+   ]
+  },
+  {
+   "coordinate": "androidx.loader:loader",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.fragment:fragment",
+    "androidx.legacy:legacy-support-core-utils"
+   ]
+  },
+  {
+   "coordinate": "androidx.localbroadcastmanager:localbroadcastmanager",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.legacy:legacy-support-core-utils"
+   ]
+  },
+  {
+   "coordinate": "androidx.media:media",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "flutter_local_notifications 19.5.0"
+   ]
+  },
+  {
+   "coordinate": "androidx.preference:preference",
+   "version": "1.2.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "shared_preferences_android 2.4.13"
+   ]
+  },
+  {
+   "coordinate": "androidx.print:print",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.legacy:legacy-support-core-utils"
+   ]
+  },
+  {
+   "coordinate": "androidx.profileinstaller:profileinstaller",
+   "version": "1.3.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity",
+    "androidx.fragment:fragment",
+    "androidx.lifecycle:lifecycle-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.recyclerview:recyclerview",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.preference:preference"
+   ]
+  },
+  {
+   "coordinate": "androidx.room:room-common",
+   "version": "2.7.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.room:room-runtime",
+    "androidx.room:room-runtime-android"
+   ]
+  },
+  {
+   "coordinate": "androidx.room:room-common-jvm",
+   "version": "2.7.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.room:room-common"
+   ]
+  },
+  {
+   "coordinate": "androidx.room:room-runtime",
+   "version": "2.7.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.work:work-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.room:room-runtime-android",
+   "version": "2.7.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.room:room-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.savedstate:savedstate",
+   "version": "1.2.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity",
+    "androidx.fragment:fragment",
+    "androidx.lifecycle:lifecycle-viewmodel-savedstate",
+    "androidx.savedstate:savedstate-ktx"
+   ]
+  },
+  {
+   "coordinate": "androidx.savedstate:savedstate-ktx",
+   "version": "1.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.activity:activity-ktx",
+    "androidx.fragment:fragment-ktx"
+   ]
+  },
+  {
+   "coordinate": "androidx.slidingpanelayout:slidingpanelayout",
+   "version": "1.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.legacy:legacy-support-core-ui",
+    "androidx.preference:preference"
+   ]
+  },
+  {
+   "coordinate": "androidx.sqlite:sqlite",
+   "version": "2.5.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.room:room-runtime",
+    "androidx.sqlite:sqlite-framework",
+    "androidx.sqlite:sqlite-framework-android"
+   ]
+  },
+  {
+   "coordinate": "androidx.sqlite:sqlite-android",
+   "version": "2.5.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.room:room-runtime-android",
+    "androidx.sqlite:sqlite"
+   ]
+  },
+  {
+   "coordinate": "androidx.sqlite:sqlite-framework",
+   "version": "2.5.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.room:room-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.sqlite:sqlite-framework-android",
+   "version": "2.5.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.room:room-runtime-android",
+    "androidx.sqlite:sqlite-framework"
+   ]
+  },
+  {
+   "coordinate": "androidx.startup:startup-runtime",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.lifecycle:lifecycle-process",
+    "androidx.profileinstaller:profileinstaller",
+    "androidx.work:work-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.swiperefreshlayout:swiperefreshlayout",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.legacy:legacy-support-core-ui"
+   ]
+  },
+  {
+   "coordinate": "androidx.tracing:tracing",
+   "version": "1.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding"
+   ]
+  },
+  {
+   "coordinate": "androidx.tracing:tracing-ktx",
+   "version": "1.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.work:work-runtime"
+   ]
+  },
+  {
+   "coordinate": "androidx.transition:transition",
+   "version": "1.4.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.slidingpanelayout:slidingpanelayout"
+   ]
+  },
+  {
+   "coordinate": "androidx.vectordrawable:vectordrawable",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.appcompat:appcompat-resources",
+    "androidx.vectordrawable:vectordrawable-animated"
+   ]
+  },
+  {
+   "coordinate": "androidx.vectordrawable:vectordrawable-animated",
+   "version": "1.1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.appcompat:appcompat-resources"
+   ]
+  },
+  {
+   "coordinate": "androidx.versionedparcelable:versionedparcelable",
+   "version": "1.1.1",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.core:core"
+   ]
+  },
+  {
+   "coordinate": "androidx.viewpager:viewpager",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.fragment:fragment",
+    "androidx.legacy:legacy-support-core-ui"
+   ]
+  },
+  {
+   "coordinate": "androidx.window.extensions.core:core",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.window:window"
+   ]
+  },
+  {
+   "coordinate": "androidx.window:window",
+   "version": "1.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.slidingpanelayout:slidingpanelayout",
+    "androidx.window:window-java"
+   ]
+  },
+  {
+   "coordinate": "androidx.window:window-java",
+   "version": "1.2.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding"
+   ]
+  },
+  {
+   "coordinate": "androidx.work:work-runtime",
+   "version": "2.11.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "workmanager 0.7.0"
+   ]
+  },
+  {
+   "coordinate": "androidx.work:work-runtime-ktx",
+   "version": "2.11.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Bag",
+    "home_widget 0.9.3"
+   ]
+  },
+  {
+   "coordinate": "com.android.billingclient:billing",
+   "version": "8.0.0",
+   "license": "LicenseRef-Android-SDK-License",
+   "flavor": "store",
+   "terms": "LicenseRef-Android-SDK-License",
+   "declared_by": [
+    "in_app_purchase_android 0.5.0"
+   ]
+  },
+  {
+   "coordinate": "com.android.tools:desugar_jdk_libs",
+   "version": "2.1.4",
+   "license": "GPL-2.0-only WITH Classpath-exception-2.0",
+   "flavor": "all",
+   "text": "desugar_jdk_libs",
+   "source": "https://github.com/google/desugar_jdk_libs/tree/50d9c1fb3e85fa4c00161525a45484f712c1f003",
+   "declared_by": [
+    "Bag",
+    "flutter_local_notifications 19.5.0"
+   ]
+  },
+  {
+   "coordinate": "com.android.tools:desugar_jdk_libs_configuration",
+   "version": "2.1.4",
+   "license": "BSD-3-Clause",
+   "flavor": "all",
+   "text": "r8",
+   "required_by": [
+    "com.android.tools:desugar_jdk_libs"
+   ]
+  },
+  {
+   "coordinate": "com.getkeepsafe.relinker:relinker",
+   "version": "1.4.5",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Flutter 3.47.9 Android embedding"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.datatransport:transport-api",
+   "version": "3.0.0",
+   "license": "Apache-2.0",
+   "flavor": "store",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.android.billingclient:billing",
+    "com.google.android.datatransport:transport-backend-cct",
+    "com.google.android.datatransport:transport-runtime"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.datatransport:transport-backend-cct",
+   "version": "3.1.8",
+   "license": "Apache-2.0",
+   "flavor": "store",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.android.billingclient:billing"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.datatransport:transport-runtime",
+   "version": "3.1.8",
+   "license": "Apache-2.0",
+   "flavor": "store",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.android.billingclient:billing",
+    "com.google.android.datatransport:transport-backend-cct"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.gms:play-services-base",
+   "version": "18.7.2",
+   "license": "LicenseRef-Android-SDK-License",
+   "flavor": "store",
+   "terms": "LicenseRef-Android-SDK-License",
+   "declared_by": [
+    "in_app_review 2.0.12"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.gms:play-services-basement",
+   "version": "18.7.1",
+   "license": "LicenseRef-Android-SDK-License",
+   "flavor": "store",
+   "terms": "LicenseRef-Android-SDK-License",
+   "required_by": [
+    "com.android.billingclient:billing",
+    "com.google.android.gms:play-services-base",
+    "com.google.android.gms:play-services-location",
+    "com.google.android.gms:play-services-places-placereport",
+    "com.google.android.gms:play-services-tasks",
+    "com.google.android.play:review",
+    "com.google.android.play:review-ktx"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.gms:play-services-location",
+   "version": "19.0.0",
+   "license": "LicenseRef-Android-SDK-License",
+   "flavor": "store",
+   "terms": "LicenseRef-Android-SDK-License",
+   "required_by": [
+    "com.android.billingclient:billing"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.gms:play-services-places-placereport",
+   "version": "17.0.0",
+   "license": "LicenseRef-Android-SDK-License",
+   "flavor": "store",
+   "terms": "LicenseRef-Android-SDK-License",
+   "required_by": [
+    "com.google.android.gms:play-services-location"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.gms:play-services-tasks",
+   "version": "18.3.2",
+   "license": "LicenseRef-Android-SDK-License",
+   "flavor": "store",
+   "terms": "LicenseRef-Android-SDK-License",
+   "required_by": [
+    "com.android.billingclient:billing",
+    "com.google.android.gms:play-services-base",
+    "com.google.android.gms:play-services-location",
+    "com.google.android.play:review",
+    "com.google.android.play:review-ktx"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.play:core-common",
+   "version": "2.0.4",
+   "license": "LicenseRef-Play-Core-SDK-Terms",
+   "flavor": "store",
+   "terms": "LicenseRef-Play-Core-SDK-Terms",
+   "required_by": [
+    "com.google.android.play:review"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.play:review",
+   "version": "2.0.2",
+   "license": "LicenseRef-Play-Core-SDK-Terms",
+   "flavor": "store",
+   "terms": "LicenseRef-Play-Core-SDK-Terms",
+   "declared_by": [
+    "in_app_review 2.0.12"
+   ]
+  },
+  {
+   "coordinate": "com.google.android.play:review-ktx",
+   "version": "2.0.2",
+   "license": "LicenseRef-Play-Core-SDK-Terms",
+   "flavor": "store",
+   "terms": "LicenseRef-Play-Core-SDK-Terms",
+   "declared_by": [
+    "in_app_review 2.0.12"
+   ]
+  },
+  {
+   "coordinate": "com.google.code.findbugs:jsr305",
+   "version": "3.0.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.google.crypto.tink:tink-android"
+   ]
+  },
+  {
+   "coordinate": "com.google.code.gson:gson",
+   "version": "2.12.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "flutter_local_notifications 19.5.0"
+   ]
+  },
+  {
+   "coordinate": "com.google.crypto.tink:tink-android",
+   "version": "1.19.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "flutter_secure_storage 10.0.0"
+   ],
+   "embedded": [
+    {
+     "name": "Protocol Buffers (protobuf-javalite 4.32.1, shaded into tink-android)",
+     "license": "BSD-3-Clause",
+     "text": "protobuf"
+    }
+   ]
+  },
+  {
+   "coordinate": "com.google.errorprone:error_prone_annotations",
+   "version": "2.36.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.google.code.gson:gson",
+    "com.google.crypto.tink:tink-android"
+   ]
+  },
+  {
+   "coordinate": "com.google.firebase:firebase-encoders",
+   "version": "17.0.0",
+   "license": "Apache-2.0",
+   "flavor": "store",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.google.android.datatransport:transport-backend-cct",
+    "com.google.android.datatransport:transport-runtime",
+    "com.google.firebase:firebase-encoders-json",
+    "com.google.firebase:firebase-encoders-proto"
+   ]
+  },
+  {
+   "coordinate": "com.google.firebase:firebase-encoders-json",
+   "version": "18.0.0",
+   "license": "Apache-2.0",
+   "flavor": "store",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.google.android.datatransport:transport-backend-cct"
+   ]
+  },
+  {
+   "coordinate": "com.google.firebase:firebase-encoders-proto",
+   "version": "16.0.0",
+   "license": "Apache-2.0",
+   "flavor": "store",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.google.android.datatransport:transport-runtime"
+   ]
+  },
+  {
+   "coordinate": "com.google.guava:listenablefuture",
+   "version": "1.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.browser:browser",
+    "androidx.concurrent:concurrent-futures",
+    "androidx.profileinstaller:profileinstaller",
+    "androidx.work:work-runtime"
+   ]
+  },
+  {
+   "coordinate": "com.squareup.okio:okio",
+   "version": "3.4.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-core-okio",
+    "androidx.datastore:datastore-preferences-core"
+   ]
+  },
+  {
+   "coordinate": "com.squareup.okio:okio-jvm",
+   "version": "3.4.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-android",
+    "androidx.datastore:datastore-core-okio-jvm",
+    "androidx.datastore:datastore-preferences-core-jvm",
+    "com.squareup.okio:okio"
+   ]
+  },
+  {
+   "coordinate": "javax.inject:javax.inject",
+   "version": "1",
+   "license": "Apache-2.0",
+   "flavor": "store",
+   "text": "Apache-2.0",
+   "required_by": [
+    "com.google.android.datatransport:transport-runtime"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlin:kotlin-android-extensions-runtime",
+   "version": "1.9.22",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "org.jetbrains.kotlin:kotlin-parcelize-runtime"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlin:kotlin-parcelize-runtime",
+   "version": "1.9.22",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-core-android"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlin:kotlin-stdlib",
+   "version": "2.3.21",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "Bag (Kotlin)",
+    "flutter_foreground_task 8.17.0 (Kotlin)",
+    "home_widget 0.9.3 (Kotlin)",
+    "shared_preferences_android 2.4.13 (Kotlin)",
+    "workmanager 0.7.0 (Kotlin)"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlin:kotlin-stdlib-common",
+   "version": "1.9.22",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.compose.ui:ui-graphics",
+    "com.squareup.okio:okio-jvm",
+    "org.jetbrains.kotlinx:atomicfu-jvm",
+    "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm",
+    "org.jetbrains.kotlinx:kotlinx-serialization-protobuf-jvm"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+   "version": "1.9.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+   "version": "1.9.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "home_widget 0.9.3"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:atomicfu",
+   "version": "0.17.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-core",
+    "androidx.datastore:datastore-core-okio",
+    "androidx.room:room-runtime"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:atomicfu-jvm",
+   "version": "0.17.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "org.jetbrains.kotlinx:atomicfu"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-android",
+   "version": "1.10.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "flutter_foreground_task 8.17.0",
+    "home_widget 0.9.3"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-core",
+   "version": "1.7.3",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "declared_by": [
+    "flutter_foreground_task 8.17.0"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm",
+   "version": "1.10.2",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-android",
+    "androidx.datastore:datastore-core-android",
+    "androidx.datastore:datastore-preferences-android",
+    "androidx.room:room-runtime-android",
+    "org.jetbrains.kotlinx:kotlinx-coroutines-android",
+    "org.jetbrains.kotlinx:kotlinx-coroutines-core"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-core",
+   "version": "1.6.3",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-preferences-core"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm",
+   "version": "1.6.3",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "org.jetbrains.kotlinx:kotlinx-serialization-core",
+    "org.jetbrains.kotlinx:kotlinx-serialization-protobuf-jvm"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-protobuf",
+   "version": "1.6.3",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.datastore:datastore-preferences-core"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains.kotlinx:kotlinx-serialization-protobuf-jvm",
+   "version": "1.6.3",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "org.jetbrains.kotlinx:kotlinx-serialization-protobuf"
+   ]
+  },
+  {
+   "coordinate": "org.jetbrains:annotations",
+   "version": "23.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "org.jetbrains.kotlin:kotlin-stdlib",
+    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm"
+   ]
+  },
+  {
+   "coordinate": "org.jspecify:jspecify",
+   "version": "1.0.0",
+   "license": "Apache-2.0",
+   "flavor": "all",
+   "text": "Apache-2.0",
+   "required_by": [
+    "androidx.exifinterface:exifinterface",
+    "androidx.room:room-runtime-android",
+    "androidx.work:work-runtime"
+   ]
+  }
+ ],
+ "fonts": [
+  {
+   "asset": "fonts/MaterialIcons-Regular.otf",
+   "name": "Material Icons font (bundled by Flutter 3.47.9)",
+   "package": "Material Icons font",
+   "bundled_by": "Flutter 3.47.9",
+   "license": "CC-BY-4.0",
+   "notice": "© Google. Release builds carry a modified copy: Flutter's icon tree shaking keeps only the glyphs Bag uses",
+   "link": "https://github.com/google/material-design-icons",
+   "text": "Attribution 4.0 International\n\n=======================================================================\n\nCreative Commons Corporation (\"Creative Commons\") is not a law firm and\ndoes not provide legal services or legal advice. Distribution of\nCreative Commons public licenses does not create a lawyer-client or\nother relationship. Creative Commons makes its licenses and related\ninformation available on an \"as-is\" basis. Creative Commons gives no\nwarranties regarding its licenses, any material licensed under their\nterms and conditions, or any related information. Creative Commons\ndisclaims all liability for damages resulting from their use to the\nfullest extent possible.\n\nUsing Creative Commons Public Licenses\n\nCreative Commons public licenses provide a standard set of terms and\nconditions that creators and other rights holders may use to share\noriginal works of authorship and other material subject to copyright\nand certain other rights specified in the public license below. The\nfollowing considerations are for informational purposes only, are not\nexhaustive, and do not form part of our licenses.\n\n     Considerations for licensors: Our public licenses are\n     intended for use by those authorized to give the public\n     permission to use material in ways otherwise restricted by\n     copyright and certain other rights. Our licenses are\n     irrevocable. Licensors should read and understand the terms\n     and conditions of the license they choose before applying it.\n     Licensors should also secure all rights necessary before\n     applying our licenses so that the public can reuse the\n     material as expected. Licensors should clearly mark any\n     material not subject to the license. This includes other CC-\n     licensed material, or material used under an exception or\n     limitation to copyright. More considerations for licensors:\n     wiki.creativecommons.org/Considerations_for_licensors\n\n     Considerations for the public: By using one of our public\n     licenses, a licensor grants the public permission to use the\n     licensed material under specified terms and conditions. If\n     the licensor's permission is not necessary for any reason--for\n     example, because of any applicable exception or limitation to\n     copyright--then that use is not regulated by the license. Our\n     licenses grant only permissions under copyright and certain\n     other rights that a licensor has authority to grant. Use of\n     the licensed material may still be restricted for other\n     reasons, including because others have copyright or other\n     rights in the material. A licensor may make special requests,\n     such as asking that all changes be marked or described.\n     Although not required by our licenses, you are encouraged to\n     respect those requests where reasonable. More_considerations\n     for the public:\n     wiki.creativecommons.org/Considerations_for_licensees\n\n=======================================================================\n\nCreative Commons Attribution 4.0 International Public License\n\nBy exercising the Licensed Rights (defined below), You accept and agree\nto be bound by the terms and conditions of this Creative Commons\nAttribution 4.0 International Public License (\"Public License\"). To the\nextent this Public License may be interpreted as a contract, You are\ngranted the Licensed Rights in consideration of Your acceptance of\nthese terms and conditions, and the Licensor grants You such rights in\nconsideration of benefits the Licensor receives from making the\nLicensed Material available under these terms and conditions.\n\n\nSection 1 -- Definitions.\n\n  a. Adapted Material means material subject to Copyright and Similar\n     Rights that is derived from or based upon the Licensed Material\n     and in which the Licensed Material is translated, altered,\n     arranged, transformed, or otherwise modified in a manner requiring\n     permission under the Copyright and Similar Rights held by the\n     Licensor. For purposes of this Public License, where the Licensed\n     Material is a musical work, performance, or sound recording,\n     Adapted Material is always produced where the Licensed Material is\n     synched in timed relation with a moving image.\n\n  b. Adapter's License means the license You apply to Your Copyright\n     and Similar Rights in Your contributions to Adapted Material in\n     accordance with the terms and conditions of this Public License.\n\n  c. Copyright and Similar Rights means copyright and/or similar rights\n     closely related to copyright including, without limitation,\n     performance, broadcast, sound recording, and Sui Generis Database\n     Rights, without regard to how the rights are labeled or\n     categorized. For purposes of this Public License, the rights\n     specified in Section 2(b)(1)-(2) are not Copyright and Similar\n     Rights.\n\n  d. Effective Technological Measures means those measures that, in the\n     absence of proper authority, may not be circumvented under laws\n     fulfilling obligations under Article 11 of the WIPO Copyright\n     Treaty adopted on December 20, 1996, and/or similar international\n     agreements.\n\n  e. Exceptions and Limitations means fair use, fair dealing, and/or\n     any other exception or limitation to Copyright and Similar Rights\n     that applies to Your use of the Licensed Material.\n\n  f. Licensed Material means the artistic or literary work, database,\n     or other material to which the Licensor applied this Public\n     License.\n\n  g. Licensed Rights means the rights granted to You subject to the\n     terms and conditions of this Public License, which are limited to\n     all Copyright and Similar Rights that apply to Your use of the\n     Licensed Material and that the Licensor has authority to license.\n\n  h. Licensor means the individual(s) or entity(ies) granting rights\n     under this Public License.\n\n  i. Share means to provide material to the public by any means or\n     process that requires permission under the Licensed Rights, such\n     as reproduction, public display, public performance, distribution,\n     dissemination, communication, or importation, and to make material\n     available to the public including in ways that members of the\n     public may access the material from a place and at a time\n     individually chosen by them.\n\n  j. Sui Generis Database Rights means rights other than copyright\n     resulting from Directive 96/9/EC of the European Parliament and of\n     the Council of 11 March 1996 on the legal protection of databases,\n     as amended and/or succeeded, as well as other essentially\n     equivalent rights anywhere in the world.\n\n  k. You means the individual or entity exercising the Licensed Rights\n     under this Public License. Your has a corresponding meaning.\n\n\nSection 2 -- Scope.\n\n  a. License grant.\n\n       1. Subject to the terms and conditions of this Public License,\n          the Licensor hereby grants You a worldwide, royalty-free,\n          non-sublicensable, non-exclusive, irrevocable license to\n          exercise the Licensed Rights in the Licensed Material to:\n\n            a. reproduce and Share the Licensed Material, in whole or\n               in part; and\n\n            b. produce, reproduce, and Share Adapted Material.\n\n       2. Exceptions and Limitations. For the avoidance of doubt, where\n          Exceptions and Limitations apply to Your use, this Public\n          License does not apply, and You do not need to comply with\n          its terms and conditions.\n\n       3. Term. The term of this Public License is specified in Section\n          6(a).\n\n       4. Media and formats; technical modifications allowed. The\n          Licensor authorizes You to exercise the Licensed Rights in\n          all media and formats whether now known or hereafter created,\n          and to make technical modifications necessary to do so. The\n          Licensor waives and/or agrees not to assert any right or\n          authority to forbid You from making technical modifications\n          necessary to exercise the Licensed Rights, including\n          technical modifications necessary to circumvent Effective\n          Technological Measures. For purposes of this Public License,\n          simply making modifications authorized by this Section 2(a)\n          (4) never produces Adapted Material.\n\n       5. Downstream recipients.\n\n            a. Offer from the Licensor -- Licensed Material. Every\n               recipient of the Licensed Material automatically\n               receives an offer from the Licensor to exercise the\n               Licensed Rights under the terms and conditions of this\n               Public License.\n\n            b. No downstream restrictions. You may not offer or impose\n               any additional or different terms or conditions on, or\n               apply any Effective Technological Measures to, the\n               Licensed Material if doing so restricts exercise of the\n               Licensed Rights by any recipient of the Licensed\n               Material.\n\n       6. No endorsement. Nothing in this Public License constitutes or\n          may be construed as permission to assert or imply that You\n          are, or that Your use of the Licensed Material is, connected\n          with, or sponsored, endorsed, or granted official status by,\n          the Licensor or others designated to receive attribution as\n          provided in Section 3(a)(1)(A)(i).\n\n  b. Other rights.\n\n       1. Moral rights, such as the right of integrity, are not\n          licensed under this Public License, nor are publicity,\n          privacy, and/or other similar personality rights; however, to\n          the extent possible, the Licensor waives and/or agrees not to\n          assert any such rights held by the Licensor to the limited\n          extent necessary to allow You to exercise the Licensed\n          Rights, but not otherwise.\n\n       2. Patent and trademark rights are not licensed under this\n          Public License.\n\n       3. To the extent possible, the Licensor waives any right to\n          collect royalties from You for the exercise of the Licensed\n          Rights, whether directly or through a collecting society\n          under any voluntary or waivable statutory or compulsory\n          licensing scheme. In all other cases the Licensor expressly\n          reserves any right to collect such royalties.\n\n\nSection 3 -- License Conditions.\n\nYour exercise of the Licensed Rights is expressly made subject to the\nfollowing conditions.\n\n  a. Attribution.\n\n       1. If You Share the Licensed Material (including in modified\n          form), You must:\n\n            a. retain the following if it is supplied by the Licensor\n               with the Licensed Material:\n\n                 i. identification of the creator(s) of the Licensed\n                    Material and any others designated to receive\n                    attribution, in any reasonable manner requested by\n                    the Licensor (including by pseudonym if\n                    designated);\n\n                ii. a copyright notice;\n\n               iii. a notice that refers to this Public License;\n\n                iv. a notice that refers to the disclaimer of\n                    warranties;\n\n                 v. a URI or hyperlink to the Licensed Material to the\n                    extent reasonably practicable;\n\n            b. indicate if You modified the Licensed Material and\n               retain an indication of any previous modifications; and\n\n            c. indicate the Licensed Material is licensed under this\n               Public License, and include the text of, or the URI or\n               hyperlink to, this Public License.\n\n       2. You may satisfy the conditions in Section 3(a)(1) in any\n          reasonable manner based on the medium, means, and context in\n          which You Share the Licensed Material. For example, it may be\n          reasonable to satisfy the conditions by providing a URI or\n          hyperlink to a resource that includes the required\n          information.\n\n       3. If requested by the Licensor, You must remove any of the\n          information required by Section 3(a)(1)(A) to the extent\n          reasonably practicable.\n\n       4. If You Share Adapted Material You produce, the Adapter's\n          License You apply must not prevent recipients of the Adapted\n          Material from complying with this Public License.\n\n\nSection 4 -- Sui Generis Database Rights.\n\nWhere the Licensed Rights include Sui Generis Database Rights that\napply to Your use of the Licensed Material:\n\n  a. for the avoidance of doubt, Section 2(a)(1) grants You the right\n     to extract, reuse, reproduce, and Share all or a substantial\n     portion of the contents of the database;\n\n  b. if You include all or a substantial portion of the database\n     contents in a database in which You have Sui Generis Database\n     Rights, then the database in which You have Sui Generis Database\n     Rights (but not its individual contents) is Adapted Material; and\n\n  c. You must comply with the conditions in Section 3(a) if You Share\n     all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not\nreplace Your obligations under this Public License where the Licensed\nRights include other Copyright and Similar Rights.\n\n\nSection 5 -- Disclaimer of Warranties and Limitation of Liability.\n\n  a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE\n     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS\n     AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF\n     ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,\n     IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,\n     WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR\n     PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,\n     ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT\n     KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT\n     ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\n\n  b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE\n     TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,\n     NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,\n     INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,\n     COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR\n     USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN\n     ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR\n     DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR\n     IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\n\n  c. The disclaimer of warranties and limitation of liability provided\n     above shall be interpreted in a manner that, to the extent\n     possible, most closely approximates an absolute disclaimer and\n     waiver of all liability.\n\n\nSection 6 -- Term and Termination.\n\n  a. This Public License applies for the term of the Copyright and\n     Similar Rights licensed here. However, if You fail to comply with\n     this Public License, then Your rights under this Public License\n     terminate automatically.\n\n  b. Where Your right to use the Licensed Material has terminated under\n     Section 6(a), it reinstates:\n\n       1. automatically as of the date the violation is cured, provided\n          it is cured within 30 days of Your discovery of the\n          violation; or\n\n       2. upon express reinstatement by the Licensor.\n\n     For the avoidance of doubt, this Section 6(b) does not affect any\n     right the Licensor may have to seek remedies for Your violations\n     of this Public License.\n\n  c. For the avoidance of doubt, the Licensor may also offer the\n     Licensed Material under separate terms or conditions or stop\n     distributing the Licensed Material at any time; however, doing so\n     will not terminate this Public License.\n\n  d. Sections 1, 5, 6, 7, and 8 survive termination of this Public\n     License.\n\n\nSection 7 -- Other Terms and Conditions.\n\n  a. The Licensor shall not be bound by any additional or different\n     terms or conditions communicated by You unless expressly agreed.\n\n  b. Any arrangements, understandings, or agreements regarding the\n     Licensed Material not stated herein are separate from and\n     independent of the terms and conditions of this Public License.\n\n\nSection 8 -- Interpretation.\n\n  a. For the avoidance of doubt, this Public License does not, and\n     shall not be interpreted to, reduce, limit, restrict, or impose\n     conditions on any use of the Licensed Material that could lawfully\n     be made without permission under this Public License.\n\n  b. To the extent possible, if any provision of this Public License is\n     deemed unenforceable, it shall be automatically reformed to the\n     minimum extent necessary to make it enforceable. If the provision\n     cannot be reformed, it shall be severed from this Public License\n     without affecting the enforceability of the remaining terms and\n     conditions.\n\n  c. No term or condition of this Public License will be waived and no\n     failure to comply consented to unless expressly agreed to by the\n     Licensor.\n\n  d. Nothing in this Public License constitutes or may be interpreted\n     as a limitation upon, or waiver of, any privileges and immunities\n     that apply to the Licensor or You, including from the legal\n     processes of any jurisdiction or authority.\n\n\n=======================================================================\n\nCreative Commons is not a party to its public licenses.\nNotwithstanding, Creative Commons may elect to apply one of its public\nlicenses to material it publishes and in those instances will be\nconsidered the \"Licensor.\" Except for the limited purpose of indicating\nthat material is shared under a Creative Commons public license or as\notherwise permitted by the Creative Commons policies published at\ncreativecommons.org/policies, Creative Commons does not authorize the\nuse of the trademark \"Creative Commons\" or any other trademark or logo\nof Creative Commons without its prior written consent including,\nwithout limitation, in connection with any unauthorized modifications\nto any of its public licenses or any other arrangements,\nunderstandings, or agreements concerning use of licensed material. For\nthe avoidance of doubt, this paragraph does not form part of the public\nlicenses.\n\nCreative Commons may be contacted at creativecommons.org.\n"
+  }
+ ],
+ "ios": {
+  "note": "Bag's iOS plugins (their podspecs and Swift packages) depend only on Flutter and on Apple's system frameworks (StoreKit in the App Store build), so there are no further iOS libraries to list. The Rust crates above are linked into the iOS app too.",
+  "checked": [
+   "flutter_foreground_task 8.17.0",
+   "flutter_local_notifications 19.5.0",
+   "flutter_secure_storage_darwin 0.2.0",
+   "home_widget 0.9.3",
+   "in_app_purchase_storekit 0.4.17",
+   "in_app_review 2.0.12",
+   "local_auth_darwin 1.6.0",
+   "path_provider_foundation 2.4.2",
+   "shared_preferences_foundation 2.5.4",
+   "tor 0.2.2",
+   "url_launcher_ios 6.3.4",
+   "workmanager 0.7.0"
+  ]
+ }
+}
